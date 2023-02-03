@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #F0F8FF;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	height: 100vh;
+
+}
+
+.container {
+	width: 90%;
+	max-width: 700px;	
+	margin: auto;
+	overflow: hidden;
+	text-align: center;		
+}
+
+main .description {
+	padding-top: 3em;
+
+}
+
+main .description .container h1 {
+	font-size: 3rem;
+	line-height: 0.8;
+	letter-spacing: 1.4px;
+	font-weight: 500;
+	margin-bottom: 0.4em;
+}
+
+main .description .container p {
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	font-weight: 500;
+	margin: 1px 0;
+	color: #000;
+}
+
+main .description .container span {
+	font-weight: 700;
+	color: red;	
+}
+
+main .credit_card .container {
+	display: flex;
+	justify-content: center;
+}
+
+
+main .credit_card .container .card_box {
+	border: 3px solid #000;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+	height: 30vh;
+	border-radius: 10px;
+	margin-top: 1em;
+	padding: 0.4em;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+main .credit_card .container .card_box input {
+	width: 90%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+main .credit_card .container .card_box button {
+	background-color: #4c7ef3;
+	color: #fff;
+  	cursor: pointer;  	
+  	width: 60%;
+  	height: 39px;
+  	border: none;
+  	border-radius: 3px;
+  	font-weight: 700;
+  	font-size: 1em;
+}
+
+main .container .new_check  {
+	background-color: #4c7ef3;
+	color: #fff;
+  	cursor: pointer;  	
+  	width: 50%;
+  	height: 39px;
+  	border: none;
+  	border-radius: 3px;
+  	font-weight: 700;
+  	font-size: 1em;
+  	margin: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  	main .credit_card .container .card_box {
+  		width: 50%;
+  	}
+  	main .credit_card .container .card_box input {
+  		width: 70%;
+
+  	}
+  	main .container .new_check {
+ width: 35%;
+  	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="credit_style.css">
+	<title>Credit Card Checker</title>
+</head>
+<body>
+	<main>	
+		<!-- description section -->
+		<section class="description">
+			<div class="container">		
+				<h1>Credit Card Checker</h1>
+				<p><span>Note: These credit card numbers DO NOT work!</span> <br>
+				Without a valid owner name, an expiration date and a valid CVV code, this credit card numbers can't be used for real transactions, <br>
+				<p>therefore this test is completely secure.</p>
+				</p>			
+			</div>	
+		</section>
+		<!-- credit card section -->
+		<section class="credit_card">
+			<div class="container">
+				<div class="card_box">
+					<p>Insert a credit Card Number to check if it is a valid Card</p>
+					<input type="number" name="card_number" id="card_number" minlength="14" maxlength="16">
+					<button class="button" id="check_card">Check Credit Card</button>
+				</div>
+			</div>		
+		</section>
+		<!-- buttons section -->
+		<section>				
+			<div class="container">
+				<button class="button new_check" id="new_check">Check New Card</button>	
+			</div>		
+		</section>
+	</main>
+	
+</body>
+<script src="credit_main.js"></script>
+</html>
