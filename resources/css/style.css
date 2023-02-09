@@ -1,11 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;	
+	box-sizing: border-box;		
 }
 
 html {
-	font-size: 16px;
+	font-size: 16px;	
 }
 
 body {
@@ -14,10 +14,48 @@ body {
 	color: #fff;
 }
 
+h1 {
+	color: #fff;
+	font-weight: 300;
+	margin: 0;	
+	font-size: 3rem;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+h2 {
+	color: #fff;
+	font-weight: 300;
+	margin: 0;	
+	font-size: 2rem;
+	text-align: center;
+	line-height: 0.8em;
+	letter-spacing: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+h3 {
+	color: #fff;
+	font-weight: 300;
+	margin: 0;	
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+p {
+	color: #fff;
+	font-weight: 300;
+	margin: 0;	
+	font-size: 1rem;
+	text-align: center;
+	margin: 0.2em 0;
+}
+
 .container {
 	width: 90%;
 	max-width: 1000px;	
-	margin: auto;
+	margin: 0 auto 1.5em;
 	overflow: hidden;
 }
 
@@ -25,8 +63,8 @@ body {
 header {
 	background: url("../img/background-header.png");
 	background-position: center;
-  	background-repeat: no-repeat;  	
-  	max-height: 600px;
+  background-repeat: no-repeat;  	
+  max-height: 600px;
 }
 
 header .menu {
@@ -67,23 +105,7 @@ header .text_header .text {
 	padding: 20px 30px;
 }
 
-header .text_header .text h1,
-header .text_header .text h2 {
-	color: #fff;
-	font-weight: 300;
-	margin: 0;	
-}
 
-header .text_header .text .name {
-	margin-bottom: 10px;
-	font-size: 3rem;
-	line-height: 1.5em;
-}
-
-header .text_header .text .profession {
-	font-size: 1.5rem;
-	line-height: 0.8em;
-}
 
 /* ----- Main -----*/
 
@@ -116,33 +138,12 @@ main .about .text_about {
 	margin: 15px auto;
 }
 
-main .about .text_about .title {
-	font-size: 2.7em;
-	line-height: 1.5;	
-	font-weight: 300;
-	text-align: center;
-}
 
 main .about .text_about .bold {
 	color: #3895ea;
 }
 
 /* ----- Projects -----*/
-
-main .projects {
-	padding: 30px 0;
-}
-
-main .projects .container {
-	overflow: hidden;
-}
-
-main .projects .title {
-	font-size: 2.7em;
-	line-height: 1.5;	
-	font-weight: 300;
-	text-align: center;
-}
 
 main .projects .projects_container {
 	display: flex;
@@ -151,6 +152,9 @@ main .projects .projects_container {
 }
 
 main .projects .projects_container .project {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 23%;
 	background-color: #14141E;
 	padding: 1em;
@@ -173,17 +177,14 @@ main .projects .projects_container .project .project_description {
 	text-align: center;
 }
 
+
 main .projects .projects_container .project .project_description .name {
-	font-weight: 700;
+	font-weight: 500;
 	color: #3895ea;
 	margin-bottom: 7px;
+	font-size: 1.2rem;
 }
 
-main .projects .projects_container .project .project_description .category {
-	font-size: 1em;	
-	color: #fff;	
-	margin-bottom: 7px;
-}
 
 main .projects .projects_container .project button {
 	display: inline-block;
@@ -215,20 +216,6 @@ main .skills_container .skills {
 	padding-bottom: 30px;
 }
 
-main .skills_container .title {
-	text-align: center;
-	font-size: 2.7em;
-	font-weight: 300;
-}
-main .skills_container .skills h2 {
-	font-weight: 300;
-	letter-spacing: 1px;
-	margin-top: 40px;
-	margin-bottom: 5px;
-	color: #fff;
-	font-size: 2rem;
-
-}
 
 main .skills_container .skills .progress-bar {
 	background-color: #959595;
@@ -293,7 +280,7 @@ main .skills_container .skills .progress-bar .javascript {
 /* ----- skill icons section styles -----*/
 
 main .skills_icons {
-	padding: 60px 0;	
+	padding: 15px 0;	
 }
 
 main .skills_icons .container {
@@ -353,33 +340,39 @@ main .resume .container button:active {
 /*contact styles*/
 
 footer {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
+
+/*
+footer .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
 
 footer .contact .container {
-  	display: flex;
-  	flex-direction: column;
-  	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  justify-content: center;
 	align-items: center;
-}
-
-footer .contact .container h2 {
-	text-align: center;
-	font-size: 2.7em;
-	font-weight: 300;
-	line-height: 2;
-}
-
-footer .contact .container p {
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 300;
-	line-height: 1.5;
+	
 }
 
 footer .contact .container .contact-icon {
-	font-size: 3.5em;
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+footer .contact .container .contact-icon a {
+		text-align: center;
+		width: 100px;
+		height: 100px;		
+		padding: 15px 0;		
+		font-size: 3.5em;
+		color: #3895ea;
+		margin: 0 10px;
 }
 
 footer .contact .container .contact-icon p {
@@ -389,6 +382,20 @@ footer .contact .container .contact-icon p {
 footer .contact .right p {
 	text-align: center;
 	margin-top: 40px;
+	font-size: 0.8rem;
+}
+
+footer .contact .right .attribution {    
+    font-size: 0.9rem;
+    text-align: center;    
+    margin-top: 0.5rem;  
+    font-weight: 300;  
+}
+
+footer .contact .right .attribution a {
+  text-decoration: none;
+  color: #3895EA;
+  text-align: center;
 }
 
 
@@ -405,16 +412,6 @@ footer .contact .right p {
   	width: 43%;
   }
 }
-/*
-@media only screen and (max-width: 500px) {
-  header .text_header .text .name {
-	font-size: 1.75rem;	
-  }
-  header .text_header .text .profession {
-	font-size: 1.3rem;	
-  }
-}
-*/
 
 @media only screen and (max-width: 468px) {
   header .menu {
