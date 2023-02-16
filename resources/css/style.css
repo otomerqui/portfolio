@@ -175,15 +175,20 @@ main .projects .projects_container .project .project_photo img {
 
 main .projects .projects_container .project .project_description {
 	text-align: center;
+	font-weight: 500;
+	color: #3895ea;
+	margin-bottom: 7px;
+	font-size: 1.2rem;
 }
 
-
+/*
 main .projects .projects_container .project .project_description .name {
 	font-weight: 500;
 	color: #3895ea;
 	margin-bottom: 7px;
 	font-size: 1.2rem;
 }
+*/
 
 
 main .projects .projects_container .project button {
