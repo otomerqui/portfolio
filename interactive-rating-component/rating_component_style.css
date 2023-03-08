@@ -1,0 +1,173 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*outline: solid red;*/
+}
+
+html {
+	font-size: 15px;
+	color: #FFF;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	background-color: hsl(216, 12%, 8%); /* medium grey*/
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;		
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8rem;
+	
+}
+
+
+main .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5em;
+	width: 85%;
+	max-width: 400px;
+	height: 55vh;
+	max-height: 500px;
+	background-color: hsl(213, 19%, 18%); /*dark blue*/
+	border-radius: 0.9rem;	
+}
+
+main .container h1 {
+	font-size: 1.7rem;
+}
+
+main .container p {
+	color: hsl(217, 12%, 63%); /*light grey*/
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+main .container .rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main .container .rating span {
+	color: hsl(217, 12%, 63%);
+}
+
+
+main .container span {
+	border-radius: 100%;
+	background-color: #3c444c;
+	font-size: 1.1rem;
+	width: 2.5em;
+	height: 2.5em;
+	text-align: center;
+	align-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .container span:hover {
+	background-color: hsl(217, 12%, 63%);
+	color: hsl(0, 0%, 100%);
+	cursor: pointer;
+}
+
+main .container span:active {
+	background-color: hsl(25, 97%, 53%);
+	color: hsl(0, 0%, 100%);
+	cursor: pointer;
+}
+
+
+main .container button  {
+	font-weight: 700;
+	background-color: hsl(25, 97%, 53%);
+	border: none;
+	border-radius: 1.5rem;
+	height: 3.1em;
+	width: 100%;
+	color: hsl(0, 0%, 100%);
+	letter-spacing: 2px;
+}
+
+main .container button:active {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%);
+	cursor: pointer;
+}
+
+main .container .rating .selected {
+	background-color: hsl(217, 12%, 63%);
+	color: hsl(0, 0%, 100%);
+}
+
+main #thankyou {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+main #thankyou img {
+	width: 40%;
+	text-align: center;
+}
+
+
+main #thankyou .message {
+	font-size: 1rem;
+	width: 70%;
+	padding: 0.8em;
+	color: hsl(25, 97%, 53%);
+	background-color:	hsl(213, 19%, 28%);
+	border-radius: 1rem;
+	text-align: center;
+
+}
+
+
+/* footer styles */
+/*footer {
+	width: 100vw;
+}*/
+
+footer .attribution { 
+   	font-size: 11px; 
+   	text-align: center;
+   	
+}
+footer .attribution a { 
+	color: hsl(25, 97%, 53%); 
+}
+
+/* media queries*/
+
+@media only screen and (min-width: 400px) {
+	main .container {
+		padding: 2em;
+		
+		gap: 1em;
+	}
+	main .container span {
+		font-size: 1.2rem;
+		width: 2.7em;
+		height: 2.7em;	
+	}
+	main .container .rating {
+		/*margin: 1em 0;*/
+	}
+	
+}
+
+  
+  
