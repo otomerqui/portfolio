@@ -1,0 +1,457 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*outline: solid red;*/
+}
+
+body {
+	font-family: "Roboto";
+	font-size: 15px;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+p {
+	color: black;
+	margin: 0.5em 0;
+}
+
+h1 {
+	margin: 0.6em 0;
+}
+
+button {
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	border: none;
+}
+
+body header {
+	position: fixed;
+	padding: 1rem 0;
+	width: 100%;
+	background-color: hsl(0, 0%, 100%);
+	z-index: 2;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto 0 auto;
+	padding-right: 1rem;
+	padding-left: 1rem;	
+}
+
+.container_fluid {
+	width: 100%;
+	margin: 0 auto 0 auto;	
+}
+
+/* header section */
+
+body header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	height: auto;		
+}
+
+body header .container .desktop_menu {
+	display: none;
+}
+
+body header .container .logo {
+	width: 13em;
+}
+
+body header #hamburger-input {
+	display: none;
+}
+
+body header #hamburger-menu {
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient( to bottom, hsl(0, 100%, 50%), hsl(0, 100%, 50%) 20%, hsl(0, 0%, 100%) 20%, hsl(0, 0%, 100%) 40%, hsl(0, 100%, 50%) 40%, hsl(0, 100%, 50%) 60%, hsl(0, 0%, 100%) 60%, hsl(0, 0%, 100%) 80%, hsl(0, 100%, 50%) 80%, hsl(0, 100%, 50%) 100%);    
+}
+
+body header #hamburger-menu:hover {
+     cursor: pointer;
+}
+
+body header #hamburger-menu #sidebar-menu {
+   visibility: hidden;
+   position: fixed;
+   top: 80px;
+   left: 250px;
+   width: 200px;
+   height: 50%;
+   background-color: hsl(0, 100%, 50%);
+   transition: 0.3s;
+   padding: 0px 10px;
+   box-sizing: border-box;
+}
+
+body header #hamburger-menu h3 {
+  color: #FFF;
+  font-size: 2.2rem;
+}
+
+body header #hamburger-menu ul {
+  padding-left: 0px;
+}
+
+body header #hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+body header #hamburger-menu a {
+  color: #FFF;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+body header #hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+body header #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    right: 0;
+}
+
+body header #hamburger-input:checked ~ .overlay{
+   	visibility: visible;
+  	opacity: 0.4;
+}
+
+
+/* Hero section*/
+
+body main #hero {
+
+	background-image: url(../img/bannerprincipal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+body main #hero .hero_content {
+	text-align: center;
+	max-width: 400px;
+	padding: 0 1em;
+}
+
+body main #hero .hero_content h1 {
+	font-size: 1.8rem;
+	color: hsl(0, 0%, 100%);
+}
+
+body main #hero .hero_content p {
+	font-size: 1rem;
+	color: hsl(0, 0%, 100%);
+}
+
+body main #hero .hero_content .red_button {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 100%, 50%);
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+body main #hero .hero_content .red_button:hover {
+	color: hsl(0, 100%, 50%);
+	background-color: hsl(0, 0%, 100%);
+	cursor: pointer;	
+}
+
+/* about section*/
+
+body main #about {
+	background-image: url(../img/latas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;		
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;	
+}
+
+body main #about p {
+	color: hsl(0, 0%, 100%);
+}
+
+/* services section*/
+
+main #services {
+	margin: 2rem 0;
+}
+
+main #services .container .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main #services .container .row .column .service_block {
+	border: 1px solid hsl(0, 0%, 31%);
+	margin-bottom: 1rem;
+}
+
+main #services .container .row .column .service_block .service_img img {
+	width: 100%;
+	height: auto;
+}
+
+main #services .container .row .column .service_block .service_content {
+	padding: 1rem;
+}
+
+main #services .container .row .column .service_block .service_content .white_button {
+	color: hsl(0, 100%, 50%);
+	background-color: hsl(0, 0%, 100%);
+	font-size: 1rem;
+	font-weight: bold;
+	border: 1px solid hsl(0, 100%, 50%);
+}
+
+main #services .container .row .column .service_block .service_content .white_button:hover {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 100%, 50%);
+	cursor: pointer;	
+}
+
+main #gallery .container_fluid .row {
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+main #gallery .container_fluid .row .column {
+	width: 50%;
+}
+
+main #gallery .container_fluid .row .column .gallery_img {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+
+main #gallery .container_fluid .row .column .gallery_img img {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);	
+}
+
+main #gallery .container_fluid .row .column .gallery_img img:hover {	
+	filter: grayscale(0);
+}
+
+main #gallery .container_fluid .row .column .gallery_img h3 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	color: hsl(0, 0%, 100%);
+}
+
+main #gallery .container_fluid .row .column .gallery_img:hover h3 {
+	display: none;
+}
+
+main #contact {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 0;
+}
+
+main #contact iframe {
+	width: 100%;
+}
+
+main #contact .container_fluid form {
+	background-color: hsl(0, 100%, 50%);
+	padding: 4rem;	
+}
+
+main #contact .container_fluid form .form_block {
+	width: 100%;
+	margin: 0.5em 0;
+}
+
+main #contact .container_fluid form .form_block .form_control {
+	display: block;
+	height: 2.5rem;
+	font-size: 1.1rem;		
+	border: 1px solid hsl(0, 0%, 31%);
+	margin: 0.5em 0;
+	width: 100%;
+}
+
+main #contact .container_fluid form .form_block textarea {
+	display: block;
+	height: 5rem;
+	font-size: 1.1rem;
+	border: 1px solid hsl(0, 0%, 31%);	
+	width: 100%;
+}
+
+main #contact .container_fluid form .form_block .black_button {
+	width: 100%;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 100%, 0%);
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	border: none;
+}
+
+main #contact .container_fluid form .form_block .black_button:hover {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(139, 100%, 50%);	
+	cursor: pointer;
+}
+
+/* footer section*/
+footer .container {
+	background-color: hsl(0, 100%, 0%);
+	color: #FFF;
+}
+
+footer .container .row {
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-around;
+	gap: 1rem;
+	align-items: center;
+	align-content: center;
+	color: hsl(0, 0%, 100%);
+	padding: 1rem 0;
+}
+
+footer .container .row .column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .container .row .column h3 {
+	margin-bottom: 0.5rem;
+}
+
+footer .container .row .column p {
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+}
+
+footer .container .row .column a {
+	color: hsl(0, 0%, 100%);
+}
+
+footer .container .row .column img {
+	width: 50%;
+}
+
+footer .container .row .column .social {
+	font-size: 30px;
+	display: flex;
+}
+
+footer .container .row .column .social a {
+	margin: 0 7.5px;
+}
+
+footer ul {
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+}
+
+footer ul li {
+	margin-bottom: 10px;
+}
+
+footer .footer_bottom {
+	background-color: grey;
+	text-align: center;
+	padding: 1.2rem 1rem;
+	color: hsl(0, 0%, 100%);
+}
+
+
+/* media queries*/
+
+@media only screen and (min-width: 768px) {
+	
+	body header .container {
+		justify-content: space-between;
+		padding: 0 2rem;
+	}
+	body header .container .desktop_menu {
+	display: inline;
+	}
+	body header .container #hamburger-input {
+		display: none;
+	}
+	body header .container #hamburger-menu {
+		display: none;
+	}
+	body header .container nav a {
+		margin: 0 1em;
+		color: hsl(0, 100%, 50%);
+		font-size: 1.1rem;
+	}	
+	body header .container nav a:hover {
+		text-decoration: underline;
+	}
+	body header .container .desktop_menu {
+		display: flex;
+	}
+	
+	main #services .container .row .column {
+		width: 31%;	
+	}
+	main #gallery .container_fluid .row .column {
+		width: 33.3%;
+	}
+	main #contact {
+		position: relative;		
+	}
+	main #contact iframe {
+		height: 500px;
+		filter: grayscale(1);
+	}
+	main #contact .container_fluid form {
+		max-width: 350px;
+		max-height: 450px;
+		position: absolute;
+		top: 70px;
+		right: 60px;
+		padding: 2rem;
+	}
+	footer .container .row {
+		flex-direction: row;	
+		justify-content: space-around;
+	}
+	footer .container .row .column {
+		width: 25%;
+	}
+	footer .container .row .column img {
+		width: 100%;
+	}
+}
+
