@@ -264,6 +264,18 @@ main .skills_container .skills .progress-bar .javascript {
 	animation: javascript 1s linear forwards;
 }
 
+main .skills_container .skills .progress-bar .wordpress {
+	animation: wordpress 1s linear forwards;
+}
+
+main .skills_container .skills .progress-bar .php {
+	animation: php 1s linear forwards;
+}
+
+main .skills_container .skills .progress-bar .seo {
+	animation: seo 1s linear forwards;
+}
+
 @keyframes html {
 	100%{
 		width: 86%;
@@ -279,6 +291,24 @@ main .skills_container .skills .progress-bar .javascript {
 @keyframes javascript {
 	100%{
 		width: 50%;
+	}
+}
+
+@keyframes php {
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes wordpress {
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes seo {
+	100%{
+		width: 75%;
 	}
 }
 
@@ -318,6 +348,10 @@ main .skills_icons a:hover {
 	border: 1px solid #fff;
 }
 
+main .skills .bar-container {
+	margin: 0.5rem 0;
+}
+
 main .resume .container {
 	display: flex;
 	justify-content: center;
@@ -336,10 +370,12 @@ main .resume .container button {
 
 main .resume .container button:hover {
 	background-color: #008080;
+	cursor: pointer;
 }
 
 main .resume .container button:active {
 	background-color: #008080;
+	cursor: pointer;
 }
 
 /*contact styles*/
