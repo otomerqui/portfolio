@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<meta name="description" content="Oto's Portfolio">	
-	<link rel="stylesheet" type="text/css" href="./resources/css/normalize.css">		
+	<link id="normalize_style" rel="stylesheet" type="text/css" href="./resources/css/normalize.css" disabled>		
 	<link id="first_style" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" disabled/>
 	<script type="text/javascript">
 			window.onload = function()
 				{
 					document.getElementById('first_style').removeAttribute('disabled');
+					document.getElementById('normalize_style').removeAttribute('disabled');
 				}
 	</script>
 	<link rel="stylesheet" type="text/css" href="./resources/css/style.css">
@@ -425,10 +426,10 @@
 				<h2>Contact</h2>
         		<p>Feel free to mail me about any relevant job/projects updates.</p>  			
         		<div class="contact-icon">
-            		<a href="mailto:otomerqui@gmail.com" target="_blank" rel="nofollow">
+            		<a href="mailto:otomerqui@gmail.com" aria-label="send email" target="_blank" rel="nofollow">
             		<i class="fa-solid fa-envelope"></i>
             		</a> 
-            		<a href="https://github.com/otomerqui" target="_blank" rel="nofollow">
+            		<a href="https://github.com/otomerqui" aria-label="go to github profile" target="_blank" rel="nofollow">
             		<i class="fa-brands fa-github"></i>
             		</a>            		      		
     			</div>    			
