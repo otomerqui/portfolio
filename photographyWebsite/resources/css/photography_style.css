@@ -2,7 +2,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-content {
@@ -16,8 +16,8 @@ html {
 
 .button {
   border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
+  background-color: #f4f4f4;
+  color: #000000;
 }
 
 .image-container {
@@ -72,7 +72,7 @@ nav a {
 
 nav .button {
   padding: .1875rem .5rem;
-  background-color: #9dc20b;
+  background-color: #4C5D09;
   line-height: 1.6;
   color: white;
 }
@@ -136,7 +136,7 @@ header .mobile {
 
   header .mobile .button {
     padding: .1875rem .5rem;
-    background-color: #9dc20b;
+    background-color: #4C5D09;
     line-height: 1.6;
     color: white;
   }
@@ -163,7 +163,7 @@ header .mobile {
   padding: 0 2rem 3.5rem 2rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #4C5D09;
 }
 
 #sign-up-cta .content {

@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
   <meta name="description" content="photography website">
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link id="font_damion" href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" disabled>
+  <link id="font_rubik" href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" disabled>
+  <script type="text/javascript">
+    window.onload = function()
+      {
+        document.getElementById('font_damion').removeAttribute('disabled');
+        document.getElementById('font_rubik').removeAttribute('disabled');
+      }
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./resources/css/photography_reset.css">
   <link rel="stylesheet" href="./resources/css/photography_style.css">
@@ -21,7 +29,7 @@
           <li><a href="#">Product detail</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="https://www.instagram.com/">Follow us 
-          <img class="icon" src="./resources/images/instagram.webp"></a></li>
+          <img class="icon" src="./resources/images/instagram.webp" alt="logo instagram"></a></li>
           <li><a href="#" class="button">Join us</a></li>
         </ul>
       </nav>
