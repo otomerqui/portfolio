@@ -1,8 +1,11 @@
 /* Universal Styles */
+* {
+  outline: solid 1px red;
+}
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 18px;  
 }
 
 .main-content {
@@ -210,15 +213,19 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
+    /*position: static;*/
     width: auto;
     height: auto;
     background-color: transparent;
     border: none;
+    top: 0;
+    left: 0;
+    padding: 0 0 3.5rem 0;
   }
 
   #sign-up-cta .content {
     margin-top: 0;
+    width: auto;
   }
 
   #sign-up-cta .email {
@@ -418,7 +425,7 @@ header .mobile {
 /* Quotes Section */
 
 #quotes-section {
-  background-color: #f3f3f3;
+  background-color: #fcfcfc;
 
 }
 
@@ -477,7 +484,7 @@ header .mobile {
 /* Footer */
 
 footer {
-  background-color: #9b9b9b;
+  background-color: #575757;
   padding: 1.5rem 2rem;
 }
 
