@@ -11,7 +11,7 @@
   <div class="container">
     <div class="navbar">
       <div class="logo">
-        <a href="ecommerceWebsite.html"><img src="./img/logo-ecommerce.png" alt="RedStore" width="125px" /></a>
+        <a href="ecommerceWebsite.html"><img src="./img/logo-ecommerce.webp" alt="RedStore" width="125px" /></a>
       </div>
       <nav>
         <ul id="MenuItems">
@@ -22,9 +22,26 @@
           <li><a href="#">Account</a></li>
         </ul>
       </nav>
-      <a href="#"><img src="./img/cart.png" alt="" width="30px" height="30px" /></a>
+      <div class="submenu">
+      <a href="#"><img src="./img/cart.png" id="img-carrito"  alt="" width="30px" height="30px" /></a>
       <img src="./img/menu-mobile.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      <div id="carrito">                                    
+        <table id="lista-carrito" class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+      </div>
     </div>
+  </div>
     <div class="row">
       <div class="col-2">
         <h1>
@@ -38,7 +55,7 @@
         <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Explore Now &#8594;</a>
       </div>
       <div class="col-2">
-        <img src="./img/hero-image.png" alt="" />
+        <img src="./img/hero-image.webp" alt="" />
       </div>
     </div>
   </div>
@@ -49,15 +66,15 @@
   <div class="small-container">
     <div class="row">
       <div class="col-3">
-        <img src="./img/category-1.jpg" alt="" />
+        <img src="./img/category-1.webp" alt="" />
         <h2>Category 1</h2>
       </div>
       <div class="col-3">
-        <img src="./img/category-2.jpg" alt="" />
+        <img src="./img/category-2.webp" alt="" />
         <h2>Category 2</h2>
       </div>
       <div class="col-3">
-        <img src="./img/category-3.jpg" alt="" />
+        <img src="./img/category-3.webp" alt="" />
         <h2>Category 3</h2>
       </div>
     </div>
@@ -65,11 +82,11 @@
 </div>
 
 <!-- Featured products -->
-<div class="small-container">
+<div id="lista-productos" class="small-container">
   <h2 class="title">Featured Products</h2>
   <div class="row">
     <div class="col-4">
-      <a href="#"><img src="./img/product-1.jpg" alt="" /></a>
+      <a href="#"><img src="./img/product-1.webp" alt="" /></a>
       <a href="product_details.html">
         <h4>Red Printed T-shirt</h4>
       </a>
@@ -81,11 +98,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="1">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-2.jpg" alt="" />
+      <img src="./img/product-2.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -95,11 +112,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="2">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-3.jpg" alt="" />
+      <img src="./img/product-3.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -109,11 +126,11 @@
         <i class="fas fa-star-half-alt"></i>
       </div>
       <p>$80.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="3">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-4.jpg" alt="" />
+      <img src="./img/product-4.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -123,13 +140,13 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="4">Add to cart</button>
     </div>
   </div>
   <h2 class="title">Latest Products</h2>
   <div class="row">
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-5.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -139,11 +156,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="5">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-6.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -153,11 +170,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="6">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-7.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -167,11 +184,11 @@
         <i class="fas fa-star-half-alt"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="7">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-8.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -181,13 +198,13 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="8">Add to cart</button>
     </div>
   </div>
 
   <div class="row">
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-9.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -197,11 +214,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="9">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-10.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -211,11 +228,11 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="10">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-11.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -225,11 +242,11 @@
         <i class="fas fa-star-half-alt"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="11">Add to cart</button>
     </div>
 
     <div class="col-4">
-      <img src="./img/product-6.jpg" alt="" />
+      <img src="./img/product-12.webp" alt="" />
       <h4>Red Printed T-shirt</h4>
       <div class="rating">
         <i class="fas fa-star"></i>
@@ -239,7 +256,7 @@
         <i class="far fa-star"></i>
       </div>
       <p>$100.00</p>
-      <button>Add to cart</button>
+      <button class="agregar-carrito" data-id="12">Add to cart</button>
     </div>
   </div>
 </div>
@@ -394,7 +411,8 @@
       </div>
     </div>
     <hr />
-    <p class="copyright">Copyright &copy; 2021 - Red Store</p>
+    <p class="copyright">Copyright &copy; 2023 - Red Store</p>
+    <p class="copyright">Developed by Oto Mercado</p>
   </div>
 </div>
 
@@ -411,6 +429,7 @@
     }
   }
 </script>
+<script src="/app.js"></script>
 
 </body>
 </html>
