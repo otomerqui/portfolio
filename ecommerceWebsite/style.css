@@ -1,3 +1,9 @@
+:root {
+  --primario: #FF604D;
+  --obscuro: #484848;
+  --claro: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,22 +81,22 @@ nav ul li:hover {
   background-color: crimson;
   text-align: center;
   border-radius: 10px;
-  color: white;
+  color: #000;
 }
 
 a#vaciar-carrito {
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primario);
   padding: 5px 15px;
   display: flex;
   justify-content: center;
   width: 100%;
-  color: #ff523b; 
+  color: var(--primario); 
   margin-top: 2.5rem;
   background-color: #fff;
 }
 
 a#vaciar-carrito:hover {
-  background-color: #ff523b;
+  background-color: var(--primario);
   color: #fff;
 }
 
@@ -166,8 +172,8 @@ h2 {
 
 .btn {
   display: inline-block;
-  background: #ff523b;
-  color: #ffffff;
+  background: var(--primario);
+  color: #000;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
@@ -177,21 +183,20 @@ h2 {
 
 button {
   display: inline-block;
-  background: transparent;
-  color: #ff523b;
+  background: var(--primario);
+  color: #000;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
   transition: background 0.5s;
   width: 80%;
   font-size: 16px;
-  border: 1px solid #ff523b;  
+  border: 1px solid var(--primario);  
   cursor: pointer;
 }
 
 button:hover {
-  background: #ff523b;
-  color: #fff;  
+  background: #c44130;    
 }
 
 .btn:hover {
@@ -258,7 +263,7 @@ button:hover {
 }
 .title::after {
   content: "";
-  background: #ff523b;
+  background: var(--primario);
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -279,11 +284,11 @@ h4 {
 }
 
 .rating .fas {
-  color: #ff523b;
+  color: var(--primario);
 }
 
 .rating .far {
-  color: #ff523b;
+  color: var(--primario);
 }
 
 .col-4:hover {
@@ -332,13 +337,13 @@ small {
 
 .fa-quote-left {
   font-size: 34px;
-  color: #ff523b;
+  color: var(--primario);
 }
 
 .col-3 p {
   font-size: 14px;
   margin: 12px 0;
-  color: #777777;
+  color: #474747;
 }
 
 .testimonial .col-3 h3 {
@@ -371,13 +376,13 @@ small {
 
 .footer {
   background: #000;
-  color: #8a8a8a;
+  color: #9C9C9C;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 
 .footer p {
-  color: #8a8a8a;
+  color: #9C9C9C;
 }
 
 .footer h3 {
@@ -410,7 +415,12 @@ small {
 .footer-col-3,
 .footer-col-4 {
   flex-basis: 12%;
-  text-align: center;
+  text-align: center; 
+}
+
+.footer-col-3 a,
+.footer-col-4 a {
+   color: #9C9C9C;
 }
 
 .footer-col-3 a:hover, .footer-col-4 a:hover {
@@ -488,7 +498,7 @@ ul {
 }
 
 select {
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primario);
   padding: 5px;
 }
 
@@ -502,7 +512,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primario);
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -512,7 +522,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-  background: #ff523b;
+  background: var(--primario);
   color: #ffffff;
 }
 
@@ -548,7 +558,7 @@ select:focus {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primario);
 }
 
 input:focus {
@@ -556,7 +566,7 @@ input:focus {
 }
 
 .single-product .fas {
-  color: #ff523b;
+  color: var(--primario);
   margin-left: 10px;
 }
 
@@ -605,7 +615,7 @@ td input {
 }
 
 td a {
-  color: #ff523b;
+  color: var(--primario);
   font-size: 12px;
 }
 
@@ -621,7 +631,7 @@ td img {
 }
 
 .total-price table {
-  border-top: 3px solid #ff523b;
+  border-top: 3px solid var(--primario);
   width: 100%;
   max-width: 400px;
 }
@@ -710,7 +720,7 @@ form a {
 #Indicator {
   width: 100px;
   border: none;
-  background: #ff523b;
+  background: var(--primario);
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
