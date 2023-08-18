@@ -1,3 +1,9 @@
+:root {
+  --primario: #FF8357;
+  --obscuro: #484848;
+  --claro: #ffffff;
+}
+
 html,
 body {
   font-family: Helvetica, sans-serif;
@@ -14,7 +20,7 @@ body {
 .main {
   height: 30rem;
   padding-top: 1rem;
-  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png');
+  background-image: url('../img/bg-photo.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,8 +34,8 @@ body {
 }
 
 nav {
-  background-color: OrangeRed;
-  color: White;
+  background-color: var(--primario);
+  color: #000;
 }
 
 ul {
@@ -62,10 +68,10 @@ li {
 }
 
 .rating {
-  background-color: OrangeRed;
+  background-color: var(--primario);
   height: 20rem;
   padding: 0 1rem;
-  color: white;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +102,7 @@ li {
 }
 
 footer {
-  background-color: OrangeRed;
+  background-color: var(--primario);
   padding: 0 1rem;
 }
 
@@ -104,8 +110,8 @@ footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5em 0;
-  color: white;
+  padding: 2em 0;
+  color: #000;
 }
 
 @media only screen and (max-width: 960px) {
