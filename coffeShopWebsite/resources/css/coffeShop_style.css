@@ -12,6 +12,14 @@ body {
   background-color: white;
 }
 
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -38,14 +46,30 @@ nav {
   color: #000;
 }
 
+nav li {
+  font-size: 21px;
+}
+
+nav li a {
+  font-size: 21px;
+  color: #000;
+}
+
+nav li:hover a {
+  color: #fff;
+}
+
 ul {
   list-style: none;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 li {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;  
 }
 
 .supporting,
@@ -88,6 +112,10 @@ li {
   float: left;
 }
 
+.gallery img:hover {
+  filter: grayscale(100%);
+}
+
 .clearfix {
   clear: both;
 }
@@ -114,6 +142,18 @@ footer .container {
   color: #000;
 }
 
+footer nav li {
+  font-size: 18px;
+}
+
+footer nav li:hover a {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 960px) {
   .main {
     padding-top: 0;
@@ -129,6 +169,11 @@ footer .container {
 @media only screen and (max-width: 470px) {
   .rating h1 {
   font-size: 2.0rem;
+  text-align: center;
+ }
+
+ h2, p {
+  text-align: center;
  }
 
 .gallery img {
@@ -138,5 +183,9 @@ footer .container {
 
   footer nav {
     display: none;
+  }
+
+  footer .container {
+    text-align: center;
   }
 }
