@@ -89,13 +89,13 @@ body header #hamburger-menu:hover {
 body header #hamburger-menu #sidebar-menu {
    visibility: hidden;
    position: fixed;
-   top: 80px;
-   left: 250px;
-   width: 200px;
-   height: 50%;
+   top: 90px;
+   left: 0;
+   width: 100%;
+   height: 60vh;
    background-color: hsl(0, 100%, 50%);
    transition: 0.3s;
-   padding: 0px 10px;
+   padding: 10px;
    box-sizing: border-box;
 }
 
@@ -189,14 +189,25 @@ body main #about {
 	min-height: 300px;	
 }
 
+#about .container {
+    padding: 0 5%;
+}
+
 body main #about p {
 	color: hsl(0, 0%, 100%);
+	font-size: 1.1rem;
 }
 
 /* services section*/
 
 main #services {
-	margin: 2rem 0;
+	margin: 8% 0;
+}
+
+@media (max-width: 768px) {
+	main #services {
+		margin: 15% 0;
+	}
 }
 
 main #services .container .row {
@@ -205,9 +216,22 @@ main #services .container .row {
 	justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+	main #services .container .row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 15px;
+	}
+}
+
 main #services .container .row .column .service_block {
-	border: 1px solid hsl(0, 0%, 31%);
 	margin-bottom: 1rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main #services .container .row .column .service_block:hover {
+	transform: translateY(-10px);
 }
 
 main #services .container .row .column .service_block .service_img img {
@@ -233,10 +257,21 @@ main #services .container .row .column .service_block .service_content .white_bu
 	cursor: pointer;	
 }
 
+section#gallery {
+    margin: 8% 0;
+}
+
+@media (max-width:768px) {
+	section#gallery {
+		margin: 15% 0;
+	}
+}
+
 main #gallery .container_fluid .row {
 	display: flex;
 	flex-wrap: wrap;	
 }
+
 
 main #gallery .container_fluid .row .column {
 	width: 50%;
@@ -281,7 +316,7 @@ main #contact iframe {
 }
 
 main #contact .container_fluid form {
-	background-color: hsl(0, 100%, 50%);
+	background-color: hsl(0deg 100% 50% / 64%);
 	padding: 4rem;	
 }
 
@@ -305,6 +340,7 @@ main #contact .container_fluid form .form_block textarea {
 	font-size: 1.1rem;
 	border: 1px solid hsl(0, 0%, 31%);	
 	width: 100%;
+	padding: 0.5rem;
 }
 
 main #contact .container_fluid form .form_block .black_button {
@@ -320,9 +356,13 @@ main #contact .container_fluid form .form_block .black_button {
 }
 
 main #contact .container_fluid form .form_block .black_button:hover {
-	color: hsl(0, 0%, 100%);
-	background-color: hsl(139, 100%, 50%);	
+	color: #fff;
+	background-color: #504d4d;	
 	cursor: pointer;
+}
+
+input.form_control {
+	padding-left: 0.5rem;
 }
 
 /* footer section*/
@@ -339,7 +379,16 @@ footer .container .row {
 	align-items: center;
 	align-content: center;
 	color: hsl(0, 0%, 100%);
-	padding: 1rem 0;
+	padding: 5%;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+@media (max-width: 768px) {
+	footer .container .row {
+		padding: 15% 5%;
+		
+	}
+	
 }
 
 footer .container .row .column {
@@ -350,7 +399,7 @@ footer .container .row .column {
 }
 
 footer .container .row .column h3 {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 footer .container .row .column p {
@@ -396,9 +445,9 @@ footer ul li {
 
 
 footer .footer_bottom {
-	background-color: grey;
+	background-color: #000;
 	text-align: center;
-	padding: 1.2rem 1rem;
+	padding: 1.5rem 1rem;
 	color: hsl(0, 0%, 100%);
 }
 
@@ -421,12 +470,13 @@ footer .footer_bottom {
 		display: none;
 	}
 	body header .container nav a {
+		padding-bottom: 0.4em;
 		margin: 0 1em;
 		color: #B30000;
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}	
 	body header .container nav a:hover {
-		text-decoration: underline;
+		border-bottom: 1px solid #B30000;
 	}
 	body header .container .desktop_menu {
 		display: flex;
@@ -446,12 +496,16 @@ footer .footer_bottom {
 		filter: grayscale(1);
 	}
 	main #contact .container_fluid form {
-		max-width: 350px;
+		min-width: 350px;
 		max-height: 450px;
 		position: absolute;
 		top: 70px;
 		right: 60px;
 		padding: 2rem;
+	}
+
+	input.form_control {
+		padding-left: 0.5rem;
 	}
 	footer .container .row {
 		flex-direction: row;	
@@ -462,6 +516,7 @@ footer .footer_bottom {
 	}
 	footer .container .row .column img {
 		width: 100%;
+		margin-bottom: 1rem;
 	}
 }
 
