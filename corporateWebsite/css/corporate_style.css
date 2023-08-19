@@ -220,11 +220,11 @@ main #services .container .row .column .service_block .service_content {
 }
 
 main #services .container .row .column .service_block .service_content .white_button {
-	color: hsl(0, 100%, 50%);
+	color: #B30000;
 	background-color: hsl(0, 0%, 100%);
 	font-size: 1rem;
 	font-weight: bold;
-	border: 1px solid hsl(0, 100%, 50%);
+	border: 1px solid #B30000;
 }
 
 main #services .container .row .column .service_block .service_content .white_button:hover {
@@ -358,8 +358,16 @@ footer .container .row .column p {
 	text-align: center;
 }
 
-footer .container .row .column a {
-	color: hsl(0, 0%, 100%);
+footer .container .row .column ul li a {
+	cursor: pointer;
+}
+
+footer .container .row .column li a {
+	color: #969696;	
+}
+
+footer .container .row .column li:hover a  {
+	color: #fff;
 }
 
 footer .container .row .column img {
@@ -382,8 +390,10 @@ footer ul {
 }
 
 footer ul li {
-	margin-bottom: 10px;
+	margin-bottom: 10px;			
 }
+
+
 
 footer .footer_bottom {
 	background-color: grey;
@@ -412,7 +422,7 @@ footer .footer_bottom {
 	}
 	body header .container nav a {
 		margin: 0 1em;
-		color: hsl(0, 100%, 50%);
+		color: #B30000;
 		font-size: 1.1rem;
 	}	
 	body header .container nav a:hover {
