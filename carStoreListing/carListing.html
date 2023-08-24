@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Store Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />  
+	<link href="css/normalize.css" rel="stylesheet" />  
+	<link href="css/templatemo-style.css" rel="stylesheet" />	
+</head>
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/cars-bg.webP">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Car House</h1>
+								<h6 class="tm-site-description">new car store</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="#" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="#" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Buscador de Autos</h2>
+				<p class="col-12 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis vestibulum justo ac auctor. Suspendisse ullamcorper porta pharetra. Proin feugiat nec felis in egestas. Sed nibh tellus, eleifend hendrerit mi ut, faucibus finibus erat.</p>
+			</header>
+
+	<!-- Filter section -->	
+
+    <div class="contenedor"> 
+        <form id="buscador">
+            <div class="fila">
+                <div class="three columns">
+                    <label for="marca">Marca</label>
+                    <select class="u-full-width" id="marca">
+                        <option value="">Seleccione</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Año</label>
+                    <select class="u-full-width" id="year">
+                        <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Precio Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Precio Max</label>
+                    <select class="u-full-width" id="maximo">
+                            <option value="">Seleccione</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="fila">
+                    <div class="four columns">
+                        <label for="puertas">Puertas</label>
+                        <select class="u-full-width" id="puertas">
+                                <option value="">Seleccione</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="transmision">Transmisión</label>
+                        <select class="u-full-width" id="transmision">
+                                <option value="">Seleccione</option>
+                                <option value="automatico">Automática</option>
+                                <option value="manual">Manual</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="color">Color</label>
+                        <select class="u-full-width" id="color">
+                                <option value="">Seleccione</option>
+                                <option value="Negro">Negro</option>
+                                <option value="Azul">Azul</option>
+                                <option value="Blanco">Blanco</option>
+                                <option value="Rojo">Rojo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+		<!-- Filter results-->
+        <h2 class="col-12 text-center tm-section-title">Resultados</h2>
+        <div id="resultado"></div>
+    </div>			
+			
+			
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023
+            
+            | Developed by Oto Mercado</p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
