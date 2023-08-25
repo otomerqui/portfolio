@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Event listener para los selects de búsqueda 
 marca.addEventListener('change', (e) => {
-    datosbusqueda.marca = e.target.value;  
+    datosbusqueda.marca = e.target.value;     
     filtrarAuto();
 });
 
@@ -60,11 +60,13 @@ puertas.addEventListener('change', (e) => {
 
 transmision.addEventListener('change', (e) => {
     datosbusqueda.transmision = e.target.value;
+    console.log(e.target.value);
     filtrarAuto();        
 });
 
 color.addEventListener('change', (e) => {
     datosbusqueda.color = e.target.value;
+    console.log(e.target.value);
     filtrarAuto();         
 });
 
@@ -86,8 +88,8 @@ function mostrarAutos(autos) {
         <img src="${auto.imagen}" class="img-fluid tm-gallery-img">
         <figcaption>
             <h4 class="tm-gallery-title">${auto.marca} ${auto.modelo} ${auto.year} </h4>
-            <p class="tm-gallery-price">Precio: $ ${auto.precio}</p>
-            <p class="resultados-text">${auto.puertas} Puertas - Transmisión:  ${auto.transmision} - Color:  ${auto.color} </p>
+            <p class="tm-gallery-price">Price: $ ${auto.precio}</p>
+            <p class="resultados-text">${auto.puertas} Doors - Transmission:  ${auto.transmision} - Color:  ${auto.color} </p>
             <a href="#" class="flex"><button type="button">More Info</button></a>
             
         </figcaption>         
@@ -136,7 +138,7 @@ function noResultado() {
 
     const noResultado = document.createElement('DIV');
     noResultado.classList.add('alerta', 'error');
-    noResultado.textContent = 'There is no result for the search, try another search terms';
+    noResultado.textContent = 'There is no results for the search, try another search terms';
     resultado.appendChild(noResultado);
 }
 

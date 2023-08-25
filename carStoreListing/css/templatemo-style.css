@@ -217,6 +217,10 @@ p, address {
   min-height: 460px;
   background: transparent;
   position: relative;
+  background-image: url('../img/cars-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax-window-2 {

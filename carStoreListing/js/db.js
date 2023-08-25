@@ -5,8 +5,8 @@ const autos = [
 		year: 2020,
 		precio: 30000,
 		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'Blue',
+		transmision: 'automatic',
         imagen: './img/gallery/bmw serie 3 2020.webp'
 	},
 	{ 
@@ -15,8 +15,8 @@ const autos = [
         year: 2020, 
         precio: 40000, 
         puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico',
+        color: 'Black', 
+        transmision: 'automatic',
 		imagen: './img/gallery/audi a4 2020.webp' 
     },
 	{
@@ -25,8 +25,8 @@ const autos = [
 		year: 2015,
 		precio: 20000,
 		puertas: 2,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'Red',
+		transmision: 'automatic',
 		imagen: './img/gallery/ford mustang 2015.webp'
 	},
 	{ 
@@ -35,8 +35,8 @@ const autos = [
         year: 2020, 
         precio: 35000, 
         puertas: 4, 
-        color: 'Negro', 
-        transmision: 'automatico',
+        color: 'Black', 
+        transmision: 'automatic',
 		imagen: './img/gallery/audi a6 2020.webp'
     },
 	{
@@ -45,8 +45,8 @@ const autos = [
 		year: 2016,
 		precio: 70000,
 		puertas: 4,
-		color: 'Rojo',
-		transmision: 'automatico',
+		color: 'White',
+		transmision: 'automatic',
 		imagen: './img/gallery/bmw serie 5 2016.webp'
 	},
 	{
@@ -55,8 +55,8 @@ const autos = [
 		year: 2015,
 		precio: 25000,
 		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'White',
+		transmision: 'automatic',
 		imagen: './img/gallery/mercedes benz clase c 2015.webp'
 	},
 	{
@@ -65,7 +65,7 @@ const autos = [
 		year: 2018,
 		precio: 60000,
 		puertas: 2,
-		color: 'Rojo',
+		color: 'White',
 		transmision: 'manual',
 		imagen: './img/gallery/chevrolet camaro 2018.webp'
 	},
@@ -75,7 +75,7 @@ const autos = [
         year: 2019, 
         precio: 80000, 
         puertas: 2, 
-        color: 'Rojo', 
+        color: 'Black', 
         transmision: 'manual',
 		imagen: './img/gallery/ford mustang 2019.webp'
     },
@@ -85,7 +85,7 @@ const autos = [
 		year: 2020,
 		precio: 40000,
 		puertas: 4,
-		color: 'Blanco',
+		color: 'White',
 		transmision: 'automatico',
 		imagen: './img/gallery/dodge challenger 2020.webp'
 	},
@@ -95,7 +95,7 @@ const autos = [
         year: 2017, 
         precio: 55000, 
         puertas: 2, 
-        color: 'Negro', 
+        color: 'White', 
         transmision: 'manual',
 		imagen: './img/gallery/audi a3 2017.webp'
     },
@@ -105,7 +105,7 @@ const autos = [
 		year: 2019,
 		precio: 22000,
 		puertas: 2,
-		color: 'Rojo',
+		color: 'Red',
 		transmision: 'manual',
 		imagen: './img/gallery/dodge challenger 2019.webp'
 	},
@@ -115,8 +115,8 @@ const autos = [
 		year: 2018,
 		precio: 45000,
 		puertas: 4,
-		color: 'Azul',
-		transmision: 'automatico',
+		color: 'Black',
+		transmision: 'automatic',
 		imagen: './img/gallery/mercedes benz clase c 2018.webp'
 	},
 	{
@@ -125,8 +125,8 @@ const autos = [
 		year: 2019,
 		precio: 90000,
 		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'Black',
+		transmision: 'automatic',
 		imagen: './img/gallery/bmw serie 5 2019.webp'
 	},
 	{ 
@@ -135,7 +135,7 @@ const autos = [
         year: 2017, 
         precio: 60000, 
         puertas: 2, 
-        color: 'Negro', 
+        color: 'Blue', 
         transmision: 'manual',
 		imagen: './img/gallery/ford mustang 2017.webp'
     },
@@ -145,8 +145,8 @@ const autos = [
 		year: 2015,
 		precio: 35000,
 		puertas: 2,
-		color: 'Azul',
-		transmision: 'automatico',
+		color: 'Blue',
+		transmision: 'automatic',
 		imagen: './img/gallery/dodge challenger 2015.webp'
 	},
 	{
@@ -155,8 +155,8 @@ const autos = [
 		year: 2018,
 		precio: 50000,
 		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'White',
+		transmision: 'automatic',
 		imagen: './img/gallery/bmw serie 3 2018.webp'
 	},
 	{
@@ -165,8 +165,8 @@ const autos = [
 		year: 2017,
 		precio: 80000,
 		puertas: 4,
-		color: 'Negro',
-		transmision: 'automatico',
+		color: 'White',
+		transmision: 'automatic',
 		imagen: './img/gallery/bmw serie 5 2017.webp'
 	},
 	{
@@ -175,8 +175,8 @@ const autos = [
 		year: 2018,
 		precio: 40000,
 		puertas: 4,
-		color: 'Blanco',
-		transmision: 'automatico',
+		color: 'White',
+		transmision: 'automatic',
 		imagen: './img/gallery/mercedes benz clase c 2018 (1).webp'
 	},
 	{ 
@@ -185,8 +185,8 @@ const autos = [
         year: 2016, 
         precio: 30000, 
         puertas: 4, 
-        color: 'Azul', 
-        transmision: 'automatico',
+        color: 'White', 
+        transmision: 'automatic',
 		imagen: './img/gallery/audi a4 2016.webp'
     }
 ];
