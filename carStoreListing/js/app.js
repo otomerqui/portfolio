@@ -85,7 +85,7 @@ function mostrarAutos(autos) {
         autoHTML.classList.add('resultados');
 
         autoHTML.innerHTML = `
-        <img src="${auto.imagen}" class="img-fluid tm-gallery-img">
+        <img src="${auto.imagen}" class="img-fluid tm-gallery-img" alt="car image">
         <figcaption>
             <h4 class="tm-gallery-title">${auto.marca} ${auto.modelo} ${auto.year} </h4>
             <p class="tm-gallery-price">Price: $ ${auto.precio}</p>

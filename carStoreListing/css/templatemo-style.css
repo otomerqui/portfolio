@@ -194,7 +194,7 @@ body {
 }
 
 p, address {
-  color: #626364;
+  color: #58595A;
   line-height: 1.8;
 }
 
@@ -395,7 +395,7 @@ img.img-fluid.tm-gallery-img:hover {
 .tm-gallery-title {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #1A6692;
+  color: #175E87;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -406,7 +406,7 @@ img.img-fluid.tm-gallery-img:hover {
 
 #resultado figure figcaption .tm-gallery-price {
   font-size: 1.25rem;
-  color: #2F956D;
+  color: #22634A;
   margin-bottom: 15px;
   padding: 0.5rem;
   border-bottom: 1px solid #e1e1e1;
@@ -832,7 +832,7 @@ button {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   width: 70%;
-  background-color: #2BA3E9;
+  background-color: #105B89;
   color: #fff;
   border: none;
   border-radius: 7px;
