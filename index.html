@@ -51,251 +51,149 @@
 			</div>		
 		</section>
 		<!-- Projects section -->
-		<section class="projects" id="projects_menu">			
+		<section class="projects" id="projects_menu">				
 			<div class="container">
 				<h2 class="title">Projects</h2>
+				<div id="tab" class="tab">
+					<button id="tab1" aria-selected="true" aria-controls="tab-panel-1" role="tab" type="button" class="tablinks">HTML - CSS</button>
+					<button id="tab2" aria-selected="false" aria-controls="tab-panel-2" role="tab" type="button" class="tablinks">HTML - CSS - JS</button>
+					<button id="tab3" aria-selected="false" aria-controls="tab-panel-3" role="tab" type="button" class="tablinks">WordPress - HTML - CSS - JS</button>
+				</div>	
 				<div class="projects_container">
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Car Listing Website
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/car-listing.webp" alt="car listing website">
+					<div id="tab-panel-1" aria-labelledby="tab-1" role="tabpanel" class="tabcontent">
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/photography-website.webp');">
 							</div>
-							<a href="./carStoreListing/carListing.html">
-								<button>See Project</button>
-							</a>
-						</details>												
+							<div class="card__content">
+								<h3 class="card__heading">Photo Website</h3>
+								<a href="./photographyWebsite/photography.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/coffeshop-website.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">CoffeShop Website</h3>
+								<a href="./coffeShopWebsite/coffeShop.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>									
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/corporate-website.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Corporate Website</h3>
+								<a href="./corporateWebsite/corporate.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>							
 					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Form Validation
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/form validation.webp" alt="form validation">
+					<div id="tab-panel-2" aria-labelledby="tab-2" role="tabpanel" class="tabcontent">
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/car-listing.webp');">
 							</div>
-							<a href="./contactFormValidation/form.html">
-								<button>See Project</button>
-							</a>
-						</details>												
+							<div class="card__content">
+								<h3 class="card__heading">Car Listing Website</h3>
+								<a href="./carStoreListing/carListing.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/ecommerce-website-home.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Ecommerce Website</h3>
+								<a href="./ecommerceWebsite/ecommerceWebsite.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/form\ validation.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Contact Form Validation</h3>
+								<a href="./contactFormValidation/form.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/age-calculator.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Age Calculator</h3>
+								<a href="./ageCalculator/agecalculator.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/number-guesser-game.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Number Guesser Game</h3>
+								<a href="./numberGuesser/number_guesser.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/credit-card-checker.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Credit Card Checker</h3>
+								<a href="./creditCardChecker/credit_card_checker.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/password-generator.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">PassWord Generator</h3>
+								<a href="./passwordGenerator/password.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/brain-exercise.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Brain Exercise Game</h3>
+								<a href="./brainExerciseProject/brainExercise.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/interactive-rating-component.webp');">
+							</div>
+							<div class="card__content">
+								<h3 class="card__heading">Interactive rating Component</h3>
+								<a href="./interactive-rating-component/rating_component.html"><button class="btn-project">See Project</button></a>
+							</div>
+						</div>						
 					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Photo Website
-								<p class="category">HTML - CSS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/photography-website.webp" alt="photography website">
+					<div id="tab-panel-3" aria-labelledby="tab-3" role="tabpanel" class="tabcontent">
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/wp-theme-development.webp');">
 							</div>
-							<a href="./photographyWebsite/photography.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								WordPress Theme Development
-								<p class="category">WordPress - HTML - CSS - JS -PHP</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/wp-theme-development.webp" alt="WordPress Theme website">
+							<div class="card__content">
+								<h3 class="card__heading">Gym Website</h3>
+								<a href="https://wp-theme.digilabonline.com/"><button class="btn-project">See Project</button></a>
 							</div>
-							<a href="https://wp-theme.digilabonline.com/">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								CoffeShop Website
-								<p class="category">HTML - CSS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/coffeshop-website.webp" alt="coffeshop website">
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/estudio-rialto.webp');">
 							</div>
-							<a href="./coffeShopWebsite/coffeShop.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Age Calculator
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/age-calculator.webp" alt="age calculator app">	
+							<div class="card__content">
+								<h3 class="card__heading">Estudio Rialto</h3>
+								<a href="https://estudiorialto.com/"><button class="btn-project">See Project</button></a>
 							</div>
-							<a href="./ageCalculator/agecalculator.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Number Guesser Game
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/number-guesser-game.webp" alt="numer guesser game app">	
+						</div>	
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/mercado-para-mascotas.webp');">
 							</div>
-							<a href="./numberGuesser/number_guesser.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Ecommerce Website
-								<p class="category">HTML - CSS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/ecommerce-website-home.webp" alt="Ecommerce Website">
+							<div class="card__content">
+								<h3 class="card__heading">Mercado Para Mascotas</h3>
+								<a href="https://mercadoparamascotas.com/"><button class="btn-project">See Project</button></a>
 							</div>
-							<a href="./ecommerceWebsite/ecommerceWebsite.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Corporate Website
-								<p class="category">HTML - CSS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/corporate-website.webp" alt="Corporate Website">
+						</div>
+						<div class="card">
+							<div class="card__background" style="background-image: url('./resources/img/viajes-negocios-online.webp');">
 							</div>
-							<a href="./corporateWebsite/corporate.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Credit Card Checker
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/credit-card-checker.webp" alt="credit card checker">
+							<div class="card__content">
+								<h3 class="card__heading">Negocios Y Viajes Online</h3>
+								<a href="https://negociosyviajes.online/"><button class="btn-project">See Project</button></a>
 							</div>
-							<a href="./creditCardChecker/credit_card_checker.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								PassWord Generator
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/password-generator.webp" alt="Password Generator App">
-							</div>
-							<a href="./passwordGenerator/password.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Brain Exercise Game
-								<p class="category">HTML - CSS - JS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/brain-exercise.webp" alt="Brain Exercise Game">
-							</div>
-							<a href="./brainExerciseProject/brainExercise.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-															
-								
-					
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Estudio Rialto
-								<p class="category">WordPress - HTML - CSS</p>					
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/estudio-rialto.webp" alt="estudio rialto arquitectura">
-							</div>
-							<a href="https://estudiorialto.com/">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Academia Hispana de PNL
-								<p class="category">WordPress - HTML - CSS</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/academia-hispana-de-pnl.webp" alt="academia hispana de pnl">
-							</div>
-							<a href="https://academiahispanadepnl.com/">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Mercado Para Mascotas
-								<p class="category">WordPress - HTML - SEO</p>							
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/mercado-para-mascotas.webp" alt="mercado para mascotas ecommerce">	
-							</div>
-							<a href="https://mercadoparamascotas.com/">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>
-					<div class="project">
-						<details>
-							<summary class="project_description">								
-								Negocios Y Viajes Online
-								<p class="category">WordPress - HTML - SEO</p>					
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/viajes-negocios-online.webp" alt="viajes y negocios online">
-							</div>
-							<a href="https://negociosyviajes.online/">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>	
-					<div class="project">
-						<details>
-							<summary class="project_description">							
-								Interactive rating Component
-								<p class="category">HTML - CSS - Javascript</p>				
-							</summary>							
-							<div class="project_photo">
-								<img src="./resources/img/interactive-rating-component.webp" alt="ineractive rating component">
-							</div>
-							<a href="./interactive-rating-component/rating_component.html">
-								<button>See Project</button>
-							</a>
-						</details>												
-					</div>						
+						</div>			
+					</div>								
 				</div>
 			</div>			
 		</section>
@@ -389,7 +287,7 @@
 	<!-- Footer contact section -->		
 		<section class="contact" id="contact_menu">			
 			<div class="container"> 
-				<h2>Contact</h2>
+				<h2 class="title">Contact</h2>
         		<p>Feel free to mail me about any relevant job/projects updates.</p>  			
         		<div class="contact-icon">
             		<a href="mailto:otomerqui@gmail.com" aria-label="send email" target="_blank" rel="nofollow">
@@ -408,5 +306,6 @@
     		</div>    	
     	</section>
 	</footer>
+	<script src="./resources/js/app.js"></script>
 </body>
 </html>

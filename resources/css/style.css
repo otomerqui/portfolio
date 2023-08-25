@@ -34,13 +34,13 @@ h2 {
 	line-height: 0.8em;
 	letter-spacing: 1px;
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 h3 {
 	color: #fff;
 	font-weight: 300;
-	margin: 0;	
+	margin: 1rem;	
 	font-size: 1.5rem;
 	text-align: center;
 }
@@ -54,11 +54,25 @@ p {
 	margin: 0.2em 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	width: 90%;
 	max-width: 1000px;	
 	margin: 0 auto 1.5em;
 	overflow: hidden;
+}
+
+h2.title:after {
+    content: '';
+    display: block;
+    background-color: #3895EA;
+    height: 3px;
+    width: 60px;
+    margin: 15px auto;
+    text-align: center;
 }
 
 /* ----- Header -----*/
@@ -147,12 +161,137 @@ main .about .text_about .bold {
 
 /* ----- Projects -----*/
 
-main .projects .projects_container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+section#projects_menu, section#skills_menu, section#contact_menu {
+    margin-top: 5rem;
 }
 
+.tab {
+	padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;   
+	display: flex;
+  }
+
+.tab button { 	
+	border: 1px solid #f1f1f166;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	width: 100%;
+	background-color: #14141E;
+	color: #3895ea;
+}
+
+.tab button:hover {
+	background-color: #fff;
+}
+
+.tab button:first-child {
+    border-right: none;
+}
+.tab button:last-child {
+    border-left: none;
+}
+
+.tabcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#tab-panel-2, #tab-panel-3 {
+	display: none;
+}
+
+/* Create an active/current tablink class */
+button[role="tab"][aria-selected="true"] {
+	background-color: #ffffff;
+	color: #3895ea;
+}
+
+.card{
+	width: 30%;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1.5rem;	
+}
+
+.card__background{
+	background-size: cover;
+	background-position: center;	
+	border-radius: 15px;
+	bottom: 0;
+	filter: brightness(0.75) saturate(1.2) contrast(0.85);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform-origin: center;
+	transform: scale(1) translateZ(0);
+	transition: 
+	  filter 200ms linear,
+	  transform 200ms linear,
+	  all 400ms linear;
+	opacity: 0.5;
+	
+}
+  
+.card:hover .card__background{
+	transform: scale(1.05) translateZ(0);
+	opacity: 1;	
+	
+}
+
+a button.btn-project {
+	background-color: #fff;
+	color: #3895EA;
+	padding: 0.5rem 1rem;
+	border: none;
+}
+
+a:hover button.btn-project {
+	background-color: #3895EA;
+	color: #fff;
+}
+
+.card button {
+	display: none;
+}
+.card:hover button {
+	display: block;
+	cursor: pointer;	
+}
+  
+.tabcontent:hover > .card:not(:hover) .card__background{
+	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+  
+.card__content {
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;           
+}
+  
+  
+.card__heading{		    
+	font-size: 1.7rem;
+	text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+	line-height: 1.4;
+	text-align: left;
+	margin: 0;
+}
+  
+/*
 main .projects .projects_container .project {
 	display: flex;
 	flex-direction: column;
@@ -183,15 +322,6 @@ main .projects .projects_container .project .project_description {
 	font-size: 1.2rem;
 }
 
-/*
-main .projects .projects_container .project .project_description .name {
-	font-weight: 500;
-	color: #3895ea;
-	margin-bottom: 7px;
-	font-size: 1.2rem;
-}
-*/
-
 
 main .projects .projects_container .project button {
 	display: inline-block;
@@ -211,7 +341,7 @@ main .projects .projects_container .project button:hover {
 main .projects .projects_container .project button:active {
 	background-color: #008080;
 }
-
+*/
 /* ----- skills section styles -----*/
 
 main .skills_container .skills {
@@ -386,17 +516,11 @@ footer {
 	margin-bottom: 20px;
 }
 
-/*
-footer .contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}*/
+
 
 footer .contact .container {
   display: flex;
-  flex-direction: column;
-  /*flex-wrap: wrap;*/
+  flex-direction: column; 
   justify-content: center;
 	align-items: center;
 	
@@ -451,9 +575,24 @@ footer .contact .right .attribution a {
     margin: 40px 0;
   }
 
-  main .projects .projects_container .project {
-  	width: 43%;
+  .card {
+  	width: 45%;
   }
+}
+
+@media only screen and (max-width: 600px) {
+	.tab {
+		flex-wrap: wrap;				
+	}	
+	.tab button:first-child {
+		border-bottom: none;
+		border-right: 1px solid #f1f1f166;
+	}
+	.tab button:last-child {
+		border-top: none;
+		border-left: 1px solid #f1f1f166;
+	}
+
 }
 
 @media only screen and (max-width: 468px) {
@@ -471,10 +610,10 @@ footer .contact .right .attribution a {
 	padding-bottom: 9px;
 	font-size: 1.4em;
 }
-	header .text_header .text .name {
+   header .text_header .text .name {
 		font-size: 2.1em;
 	}
-
+	
   main .projects .projects_container .project {
   	width: 100%;
   }
