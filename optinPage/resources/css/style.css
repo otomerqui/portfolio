@@ -1,0 +1,306 @@
+
+/* global styles*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: Poppins;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: Poppins;
+
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 300;
+	font-family: Montserrat;
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.7rem;		
+	}
+	
+	h2 {
+		font-size: 1.3rem;
+		font-weight: 700;
+	
+	}
+	
+	p {
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+}
+
+
+/* header styles*/
+
+header {
+	background-image: url(../images/fondo-header.webp);
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
+	align-items: center;
+	font-size: 1.375rem;
+}
+
+header img {
+	max-width: 4.6875rem;
+	max-height: 4.6875rem;
+}
+
+/* optin section styles*/
+
+.optin-section {
+	display: flex;	
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10% 5%;
+	gap: 1%;
+}
+
+.optin-section figure {
+		width: 45%;	
+}
+
+.optin-section img {
+    width: 80%;
+}
+
+.optin-section .optin-form {
+	width: 45%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	background-color: #f1f1f1;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.optin-section .optin-form span {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+	font-family: Montserrat;
+	color: #ddbf3f;
+	font-weight: 700;
+}
+
+input#name, input#email  {
+    width: 100%;
+    padding: 15px 0;
+	margin: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #000;
+    font-size: 1.5rem;
+    outline: none;
+    transition: border-color .2s;
+	font-family: Montserrat;
+}
+
+input[type="submit"] {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ddbf3f;
+    font-size: 1.5rem;
+	cursor: pointer;
+	border: 1px solid #000;
+	font-family: Montserrat;
+}
+
+input[type="submit"]:hover {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: green;
+    font-size: 1.5rem;
+	cursor: pointer;
+}
+
+@media (max-width: 881px) {
+	.optin-section {
+		flex-direction: column-reverse;	
+	}
+}
+
+@media (max-width: 881px) {
+	.optin-section figure {
+		width: 80%;	
+	}
+}
+
+@media (max-width: 881px) {
+	.optin-section .optin-form {
+		width: 80%;	
+		margin-bottom: 1rem;	
+	}
+}
+
+@media (max-width: 768px) {
+	input#name, input#email, input[type="submit"]  {
+		font-size: 1.1rem;		
+	}
+	.optin-section .optin-form span {
+		font-size: 1.2rem;
+		
+	}
+}
+
+/* paragraph-section section styles*/
+
+.paragraph-section {
+	background-image: url(../images/fondo-header.webp);
+	background-size: cover;
+	background-size: cover;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	height: 290px;
+	padding: 4% 5%;
+}
+
+.paragraph-section h2 {
+	text-align: center;	
+}
+
+.paragraph-section p {
+	text-align: center;
+}
+
+/* features section styles*/
+
+.features {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 8% 0;
+}
+
+
+
+.features-container {
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    padding: 5%;
+	gap: 2%;
+}
+
+
+.features h2 {
+	text-align: center;	
+	padding: 0 5%;
+}
+
+
+.features-container figure {
+	width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	gap: 1rem;
+	margin-bottom: 25px;
+}
+
+
+.features-container figure img {
+	height: 100px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+	font-family: Montserrat;
+}
+
+@media (max-width: 881px) {
+	.features-container figure {
+		width: 49%;
+	}
+}
+
+@media (max-width: 544px) {
+	.features-container figure {
+		width: 100%;
+		margin-bottom: 2.5rem;
+	}
+}
+
+@media (max-width: 600px) {
+	figcaption {
+		font-size: 1.1rem;
+	}
+	.features-container figure img {
+		height: 80px;
+	}
+}
+
+/* Sergio section styles*/
+
+.sergio {
+	background-image: url(../images/fondo-sergio.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;    
+    justify-content: center;
+	flex-wrap: wrap;
+	color: #FFF;
+    padding: 8% 5% 0;
+
+}
+
+.sergio-info {
+	width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.sergio-info {
+		width: 100%;
+		padding: 15% 5% 2%;		
+	}
+	.sergio img {
+		width: 80%;
+	}
+
+	.sergio-info h2, .sergio-info p {
+		text-align: center;
+	}
+
+}
+
+/* footer styles*/
+
+footer {
+	background-color: #000;
+	color: #9c9c9c;
+	text-align: center;
+	padding: 2% 5%;
+	
+}
+
+footer p {
+	font-size: 1rem;
+}
+

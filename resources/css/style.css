@@ -214,7 +214,7 @@ button[role="tab"][aria-selected="true"] {
 
 .card{
 	width: 30%;
-	height: 250px;
+	height: 28.125rem;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 1.5rem;	
@@ -234,34 +234,43 @@ button[role="tab"][aria-selected="true"] {
 	transform: scale(1) translateZ(0);
 	transition: 
 	  filter 200ms linear,
-	  transform 200ms linear,
-	  all 400ms linear;
-	opacity: 0.5;
+	  transform 400ms linear,
+	  all 400ms linear;	
 	
 }
   
 .card:hover .card__background{
-	transform: scale(1.05) translateZ(0);
-	opacity: 1;	
+	transform: scale(1.05) translateZ(0);	
 	
 }
 
+
 a button.btn-project {
-	background-color: #fff;
-	color: #3895EA;
-	padding: 0.5rem 1rem;
-	border: none;
-}
-
-a:hover button.btn-project {
-	background-color: #3895EA;
+	background-color: #00000000;
 	color: #fff;
+	padding: 0.5rem 0;
+	border: none;
+	transition: transform 400ms;	
 }
 
-.card button {
+a button.btn-project:after {
+	content: '';
+    display: block;
+    background-color: #3895EA;
+    height: 3px;
+    width: 40px;
+    margin: 5px 0;    	
+}
+
+
+a:hover button.btn-project {	
+	transform: scale(1.1);
+}
+
+.card a button.btn-project {
 	display: none;
 }
-.card:hover button {
+.card:hover a button.btn-project {
 	display: block;
 	cursor: pointer;	
 }
@@ -279,7 +288,13 @@ a:hover button.btn-project {
 	flex-wrap: nowrap;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 100%;           
+	width: 100%;   
+	background: linear-gradient(
+		180deg,
+		hsla(0, 0%, 0%, 0) 0%,
+		hsla(0, 0%, 0%, 0.3) 10%,
+		hsl(0, 0%, 0%) 100%
+	  );        
 }
   
   
@@ -291,57 +306,7 @@ a:hover button.btn-project {
 	margin: 0;
 }
   
-/*
-main .projects .projects_container .project {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 23%;
-	background-color: #14141E;
-	padding: 1em;
-	margin-bottom: 1em;
-	border-radius: 5px;
-}
 
-main .projects .projects_container .project .project_photo {
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-main .projects .projects_container .project .project_photo img {
-	width: 100%;
-	vertical-align: top;
-	border-radius: 3px;
-}
-
-main .projects .projects_container .project .project_description {
-	text-align: center;
-	font-weight: 500;
-	color: #3895ea;
-	margin-bottom: 7px;
-	font-size: 1.2rem;
-}
-
-
-main .projects .projects_container .project button {
-	display: inline-block;
-	background-color: #3895ea;
-	padding: 10px;
-	color: #fff;
-	font-size: 1.4em;
-	width: 100%;
-	border-radius: 7px;
-	border: 1px solid #fff;
-}
-
-main .projects .projects_container .project button:hover {
-	background-color: #008080;
-}
-
-main .projects .projects_container .project button:active {
-	background-color: #008080;
-}
-*/
 /* ----- skills section styles -----*/
 
 main .skills_container .skills {
@@ -576,7 +541,7 @@ footer .contact .right .attribution a {
   }
 
   .card {
-  	width: 45%;
+  	width: 80%;
   }
 }
 
