@@ -47,6 +47,7 @@ btnClear.addEventListener('mouseup', (e) => {
     console.log(e)
     activeScreen = '';
     screen.innerText = activeScreen;
+    location.reload();
     
     
 })
