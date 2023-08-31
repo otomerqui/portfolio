@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Poppins:wght@300;400;500&display=swap');
+
+html {
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+body {
+    line-height: 1.6;    
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
+
+p {
+    background: #dbd7d7;
+    padding: 0.5rem 1rem;
+}
+
+div#contenido {
+    margin: 2rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.column {
+    width: 47%;
+}
+
+.column.right {
+    padding-left: 3rem;
+}
+
+@media (max-width: 981px) {
+    .column {
+        width: 100%;
+    }    
+}
+
+@media (max-width: 981px) {    
+    .column.right {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.text-area {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input.button.u-full-width.button-primary {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+    width: 100%;
+    font-weight: 400;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.delete-note,
+.delete-note:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
