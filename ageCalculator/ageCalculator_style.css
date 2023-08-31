@@ -6,10 +6,11 @@
 body {
 	background-color: #483D8B;
 	font-family: 'Poppins', sans-serif;
-	min-height: 500px;	
+	min-height: 90vh;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    flex-direction: column;
 }
 
 span {
@@ -33,7 +34,8 @@ h1 {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-around;	
-	width: 50%;
+	width: 85%;
+    max-width: 960px;
 }
 
 div h1 {
@@ -56,7 +58,7 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    
     height: auto;        
 }
 
@@ -142,4 +144,14 @@ button {
   	width: 50%;	  
   	align-items: center;	
   }
-}  
+} 
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    color: #fff;    
+    font-size: 1rem;
+    font-weight: 400;
+}

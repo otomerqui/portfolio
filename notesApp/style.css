@@ -135,3 +135,13 @@ input.button.u-full-width.button-primary {
     color: red;
     font-weight: bold;
 }
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    color: #000;    
+    font-size: 1rem;
+    font-weight: 400;
+}
