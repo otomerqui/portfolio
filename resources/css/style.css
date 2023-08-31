@@ -186,7 +186,8 @@ section#projects_menu, section#skills_menu, section#contact_menu {
 }
 
 .tab button:hover {
-	background-color: #fff;
+	background-color: #11599C;
+	color: #fff;;
 }
 
 .tab button:first-child {
@@ -208,8 +209,8 @@ section#projects_menu, section#skills_menu, section#contact_menu {
 
 /* Create an active/current tablink class */
 button[role="tab"][aria-selected="true"] {
-	background-color: #ffffff;
-	color: #3895ea;
+	background-color: #11599C;
+	color: #fff;
 }
 
 .card{
@@ -322,7 +323,7 @@ main .skills_container .skills {
 main .skills_container .skills .progress-bar {
 	background-color: #959595;
 	width: 400px;
-	max-width: 95vw;
+	max-width: 85vw;
 	height: 10px;
 	border-radius: 5px;
 	text-align: center;
@@ -428,16 +429,17 @@ main .skills_icons .container div {
 	align-items: center;
 
 }
-main .skills_icons a {
-		text-align: center;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;		
-		display: block;
-		padding: 15px 0;		
-		font-size: 3.5em;
-		color: #3895ea;
-		margin: 0 10px;
+
+main .skills_icons .icon {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;		
+	display: block;
+	padding: 15px 0;		
+	font-size: 3.5em;
+	color: #3895ea;
+	margin: 0 10px;
 }
 
 main .skills_icons a:hover {
@@ -541,7 +543,7 @@ footer .contact .right .attribution a {
   }
 
   .card {
-  	width: 80%;
+  	width: 40%;
   }
 }
 
@@ -556,6 +558,9 @@ footer .contact .right .attribution a {
 	.tab button:last-child {
 		border-top: none;
 		border-left: 1px solid #f1f1f166;
+	}
+	.card {
+		width: 80%;
 	}
 
 }
@@ -574,12 +579,15 @@ footer .contact .right .attribution a {
 	border-bottom: 2px solid transparent;
 	padding-bottom: 9px;
 	font-size: 1.4em;
-}
-   header .text_header .text .name {
+ }
+
+ header .text_header .text .name {
 		font-size: 2.1em;
-	}
+ }
 	
   main .projects .projects_container .project {
   	width: 100%;
   }
+
+
 }
