@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cotizador.css">
+  </head>
+  <body>
+<div class="container">
+      <div id="contenido" class="pb-10">
+            <header class="encabezado">
+                <h1 class="text-center">Cotiza tu seguro de Auto</h1>
+            </header>
+                <form class="formulario" action="#" id="formulario">
+                        <div class="selector">
+                            <label 
+                              class="font-bold  uppercase mr-2 w-20"
+                              for="marca"
+                            >Marca:</label>
+                            <select class="flex-1 bg-gray-100 p-3 appearance-none" id="marca">
+                                <option value="">- Seleccionar -</option>
+                                <option value="1">Americano</option>
+                                <option value="2">Asiatico</option>
+                                <option value="3">Europeo</option>
+                            </select>
+                        </div>
+                        <div class="selector">
+                              <label 
+                                class="font-bold  uppercase mr-2 w-20"
+                                for="year"
+                              >Año:</label>
+                              <select  class="flex-1 bg-gray-100 p-3 appearance-none" id="year"></select>
+                        </div>
+                        <fieldset>
+                              <legend  class="font-bold  uppercase text-2xl text-center w-full">Tipo Seguro</legend>
+
+                              <div class="tipo-seguro">
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Básico</label>
+                                          <input type="radio" name="tipo" value="basico" checked>
+                                      </label>
+                                  </div>
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Completo</label>
+                                          <input type="radio" name="tipo" value="completo">
+                                      </label>
+                                  </div>
+                              </div>
+                      </fieldset>
+
+                  <div id="cargando" class="hidden">
+                        <div class="spinner">
+                          <div class="rect1"></div>
+                          <div class="rect2"></div>
+                          <div class="rect3"></div>
+                          <div class="rect4"></div>
+                          <div class="rect5"></div>
+                      </div>
+                  </div>
+                  <div id="resultado"></div>
+                  <div class="btn">
+                      <button 
+                        type="submit" 
+                        class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded"
+                        >Cotizar Seguro
+                    </button>
+                  </div>
+ 
+                </form> 
+      </div> <!--#contenido-->
+</div>
+
+  <script src="app.js"></script>
+  </body>
+</html>

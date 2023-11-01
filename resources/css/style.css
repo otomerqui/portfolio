@@ -319,6 +319,18 @@ main .skills_container .skills {
 	padding-bottom: 30px;
 }
 
+#myProgress {
+	width: 400px;
+	background-color: transparent;
+	background-color: #959595;
+  }
+  
+  .myBar {
+	width: 1%;
+	height: 5px;
+	background: linear-gradient(90deg, #317cbf 0%, #d76757 100%);
+  }
+
 
 main .skills_container .skills .progress-bar {
 	background-color: #959595;
@@ -336,18 +348,20 @@ main .skills_container .skills .progress-bar div {
 	background-color: #3895ea;
 }
 
-main .skills_container .skills .progress-bar div span {
+main .skills_container .skills .bar-container div span {
 	aspect-ratio: 1;
 	border-radius: 50%;
 	background-color: #fff;
 	float: right;
-	margin-top: -10px;
+	margin-top: -20px;
 	margin-right: -20px;
 	color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border: 3px solid green;
+	padding: 5px;
+	font-weight: 700;
 }
 
 main .skills_container .skills .progress-bar .html {
