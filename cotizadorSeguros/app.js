@@ -55,7 +55,7 @@ function calcularSeguro(seguro) {
    
    //console.log(seguro);
  
-   if(seguro.tipo === 'basico') {
+   if(seguro.tipo === 'basic') {
     cantidad *= 1.30;       
     } else  {
     cantidad *= 1.50; 
@@ -118,13 +118,13 @@ function mostrarResultado(seguro,total) {
     let textoMarca;
     switch(seguro.marca) {
         case '1':
-            textoMarca = 'Americano';
+            textoMarca = 'American';
             break;
         case '2':
-            textoMarca = 'Asiatico';
+            textoMarca = 'Asian';
             break;
         case '3':
-            textoMarca = 'Europeo';
+            textoMarca = 'European';
             break;   
 
         default:
@@ -146,10 +146,10 @@ function mostrarResultado(seguro,total) {
         const div = document.createElement('div');
         div.classList.add('mt-10');
         div.innerHTML = `
-            <p class="header"> Tu Resumen</p>
-            <p class="font-bold">Marca: <span class="font-normal"> ${textoMarca} </span></p>
-            <p class="font-bold">Año: <span class="font-normal"> ${seguro.year} </span></p>
-            <p class="font-bold">Tipo: <span class="font-normal capitalize"> ${seguro.tipo} </span></p>
+            <p class="header"> Quotation</p>
+            <p class="font-bold">Car type: <span class="font-normal"> ${textoMarca} </span></p>
+            <p class="font-bold">Year: <span class="font-normal"> ${seguro.year} </span></p>
+            <p class="font-bold">Insurance type: <span class="font-normal capitalize"> ${seguro.tipo} </span></p>
             <p class="font-bold">Total: <span class="font-normal"> $ ${total} </span></p>
         `;
         const resultadoDiv = document.querySelector('#resultado');
