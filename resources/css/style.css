@@ -602,6 +602,9 @@ footer .contact .right .attribution a {
   main .projects .projects_container .project {
   	width: 100%;
   }
+  #myProgress {
+    width: 300px;   
+  }
 
 
 }
