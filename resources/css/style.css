@@ -359,7 +359,7 @@ main .skills_container .skills .bar-container div span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 3px solid green;
+	border: 3px solid #3895EA;
 	padding: 5px;
 	font-weight: 700;
 }
