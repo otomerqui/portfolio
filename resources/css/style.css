@@ -221,12 +221,13 @@ button[role="tab"][aria-selected="true"] {
 	margin-bottom: 1.5rem;	
 }
 
+
+
 .card__background{
 	background-size: cover;
 	background-position: center;	
-	border-radius: 15px;
-	bottom: 0;
-	filter: brightness(0.75) saturate(1.2) contrast(0.85);
+	bottom: 0;	
+	filter: brightness(1);
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -234,15 +235,14 @@ button[role="tab"][aria-selected="true"] {
 	transform-origin: center;
 	transform: scale(1) translateZ(0);
 	transition: 
-	  filter 200ms linear,
-	  transform 400ms linear,
-	  all 400ms linear;	
+	  filter 200ms ease-in,
+	  transform 400ms ease-in,
+	  all 400ms ease-in;	
 	
 }
   
 .card:hover .card__background{
-	transform: scale(1.05) translateZ(0);	
-	
+	transform: scale(1.05) translateZ(0);		
 }
 
 
@@ -251,7 +251,8 @@ a button.btn-project {
 	color: #fff;
 	padding: 0.5rem 0;
 	border: none;
-	transition: transform 400ms;	
+	opacity: 0; /* Inicialmente oculto */
+	transition: opacity 400ms ease-in, transform 400ms ease-in;	
 }
 
 a button.btn-project:after {
@@ -265,19 +266,19 @@ a button.btn-project:after {
 
 
 a:hover button.btn-project {	
-	transform: scale(1.1);
+	transform: scale(1.1);	
 }
 
-.card a button.btn-project {
-	display: none;
-}
+
 .card:hover a button.btn-project {
-	display: block;
-	cursor: pointer;	
+	cursor: pointer;
+	transform: scale(1.1);
+	opacity: 1; /* Hacer visible al hacer hover */
 }
   
 .tabcontent:hover > .card:not(:hover) .card__background{
-	filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+	filter: brightness(0.5) grayscale(100%);
+	border-radius: 15px;
 }
   
 .card__content {
