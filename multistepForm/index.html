@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="./resources/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Form / Quiz App</title>
+</head>
+<body>
+    <div class="container">
+         <div class="logo-img">
+            <img src="img/logo.webp" class="logo-img" alt="logo" loading="lazy">
+         </div>
+         <div class="title-container">
+            <h2>Reservation Form</h2>		
+        </div>	
+        <div class="description-container">        
+            <p>Experience luxury on every trip. Book one of our exclusive private transportation services with chauffeur now!</p>						
+        </div> 												
+    </div>    
+    <div class="container">
+        <form>
+            <div class="step step_ 1 active">  
+                <h2>Choose the service of your preference</h2>           
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Traslado al/desde el aeropuerto" id="form-field-serviciowheels-0" name="form_fields[serviciowheels]" required="required" aria-required="true"> 
+                        <label for="form-field-serviciowheels-0">Transfer to/from the airport<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/traslado-al-desde-aeropuerto.webp" class="imagform">
+                </div>
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Traslados de larga distancia" id="form-field-field_2649e9e-1" name="form_fields[serviciowheels]" required="required" aria-required="true">
+                        <label for="form-field-field_2649e9e-1">Long distance transfers<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/traslado-larga-distancia.webp" class="imagform">
+                </div>
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Disposiciones por horas" id="form-field-field_2649e9e-2" name="form_fields[serviciowheels]" required="required" aria-required="true"> 
+                        <label for="form-field-field_2649e9e-2">Hourly provisions<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/disposiciones-por-horas.webp" class="imagform">
+                </div>
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Tours y excursiones" id="form-field-field_2649e9e-3" name="form_fields[serviciowheels]" required="required" aria-required="true"> 
+                        <label for="form-field-field_2649e9e-3">Tours and excursions<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/tours-y-excursiones.webp" class="imagform">
+                </div>
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Bodas y ocasiones especiales" id="form-field-field_2649e9e-4" name="form_fields[serviciowheels]" required="required" aria-required="true"> 
+                        <label for="form-field-field_2649e9e-4">Weddings and special occasions<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/bodas-y-ocaciones-especiales.webp" class="imagform">
+                </div>
+                <div class="opciones">
+                    <span class="opciones_text">
+                        <input type="radio" value="Traslados para eventos" id="form-field-field_2649e9e-5" name="form_fields[serviciowheels]" required="required" aria-required="true">
+                        <label for="form-field-field_2649e9e-5">Transfers for events<br></label>
+                    </span>
+                    <img width="256" height="256" src="img/traslados-para-eventos.webp" class="imagform">
+                </div>
+                <div class="opciones_desc">
+                    <span>Airport transfer</span>
+                    <p>Luxury Airport Transfer: Travel with elegance, comfort and privacy in our high-end vehicles and with professional chauffeurs. We guarantee punctuality and sophistication at your final destination.
+                    </p>
+                </div>
+                <div class="opciones_desc">
+                    <span style="font-weight: 500; color: #FFF;">Long distance transfers</span>
+                    <p>Excellence in Long Distance Transfers: Exclusive trips around Europe in luxury cars. Comfort, style and tranquility guaranteed with professional chauffeurs. Trust us for an unforgettable experience.
+                    </p>
+                </div>
+                <div class="opciones_desc">
+                    <span style="font-weight: 500; color: #FFF;">Hourly provisions</span>
+                     <p>In our company, we offer exclusive hourly arrangements service with a first-class vehicle and professional driver at your disposal. Explore Europe, attend meetings or enjoy a special night in comfort and freedom.
+                    </p>
+                </div>
+                <div class="opciones_desc">
+                    <span style="font-weight: 500; color: #FFF;">Tours and excursions</span>
+                    <p>Explore Europe with our luxury tours in exclusive vehicles and expert drivers. Discover the culture, architecture and gastronomy with personalized attention. Create unforgettable memories every step of the way. Trust us for an elegant and memorable trip.
+                     </p>
+                </div>
+                <div class="opciones_desc">
+                    <span style="font-weight: 500; color: #FFF;">Weddings and special occasions</span>
+                    <p>In our company, we make your special day an unforgettable experience. Our service dedicated to Weddings and special occasions gives you luxury and elegance in every detail. Trained and discreet drivers so that you feel cared for and special at all times.
+                    </p>
+                </div>
+                <div class="opciones_desc">
+                    <span style="font-weight: 500; color: #FFF;">Transfers for events</span>
+                    <p>We are the frequent provider of luxury chauffeurs for important events. Our impeccable service and personalized attention make us a reference in the industry. Ideal for executives and directors at meetings and events.
+                    </p>
+                </div>
+                <div class="button-contanainer container">
+                    <div class="button-wrapper">                        
+                    </div>
+                    <div class="button-wrapper">
+                        <button onclick="changeStep('next', 2)" type="button" class="button-next">Next</button>
+                    </div>
+                </div><!-- buttons-->
+            </div><!-- Opciones tipo de servicio-->                        
+            <div class="step step_2">  
+                    <h2>Choose the car of your preference</h2> 
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Mercedes Maybach" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true"> 
+                            <label for="form-field-tipocoche-0">Mercedes Maybach</label>
+                        </span>
+                        <img width="256" height="256" src="img/maybach.webp" class="imagform">
+                    </div>   
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Mercedes S Class" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true">
+                            <label for="form-field-tipocoche-0">Mercedes S Class</label>
+                        </span>
+                        <img width="256" height="256" src="img/s-class.webp" class="imagform">
+                    </div> 
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Mercedes E Class" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true">
+                            <label for="form-field-tipocoche-0">Mercedes E Class</label>
+                        </span>
+                        <img width="256" height="256" src="img/e-class.webp" class="imagform">
+                    </div>  
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Range Rover Vogue" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true">
+                            <label for="form-field-tipocoche-0">Range Rover Vogue
+                            </label>
+                        </span>
+                        <img width="256" height="256" src="img/vogue.webp" class="imagform">
+                    </div>  
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Mercedes Viano" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true">
+                            <label for="form-field-tipocoche-0">Mercedes Viano
+                            </label>
+                        </span>
+                        <img width="256" height="256" src="img/viano.webp" class="imagform">
+                    </div>  
+                    <div class="opciones">
+                        <span class="opciones_text">
+                            <input type="radio" value="Volkswagen Caravelle" id="form-field-tipocoche-0" name="form_fields[tipocoche]" required="required" aria-required="true">
+                            <label for="form-field-tipocoche-0">Volkswagen Caravelle
+                            </label>
+                        </span>
+                        <img width="256" height="256" src="img/caravelle.webp" class="imagform">
+                    </div>                     
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span>Mercedes Maybach</span> 
+                                <p class="texto-justificado">It is the embodiment of supreme luxury, offering an exclusive and sophisticated journey.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 0</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>2 - 5 años</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>                
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082590?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_Maybach" data-ready="true"></iframe>
+                                </div>                    
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span>Mercedes S Class</span> 
+                                <p class="texto-justificado">The Mercedes S Class embodies supreme luxury, exceptional craftsmanship and technological innovation, offering an unrivaled driving experience for those seeking the best in a high-end vehicle.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 1</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 2</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>2 - 5 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082501?muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963" width="289" height="162" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_CLASE S" data-ready="true"></iframe>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span style="font-weight: 500; color: #FFF;"">Mercedes E Class</span> 
+                                <p class="texto-justificado">The Mercedes E Class is a car that masterfully combines luxury, performance and technology, offering an elegant and exciting driving experience.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 2</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>2 - 5 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082553?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" width="289" height="162" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_CLASE E" data-ready="true"></iframe>
+                                </div>                    
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span style="font-weight: 500; color: #FFF;"">Range Rover Vogue </span> 
+                                <p class="texto-justificado">The Range Rover Vogue is the epitome of luxury, performance and versatility, designed for those who seek excellence in every journey.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 0</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 3</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>2 - 5 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082628?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" width="289" height="162" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_Range Rover Vogue" data-ready="true"></iframe>
+                                </div>                    
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span style="font-weight: 500; color: #FFF;"">Mercedes Viano</span> 
+                                <p class="texto-justificado">The Mercedes Viano is a luxury multipurpose vehicle that offers a perfect combination of space, comfort and versatility. With the capacity to carry up to eight passengers, the Viano features a spacious and flexible interior, designed to adapt to various transportation needs.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 7</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 7</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 0</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>2 - 5 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082711?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" width="289" height="162" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_VIANO" data-ready="true"></iframe>
+                                </div>                    
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="col-100 opciones_desc">
+                        <div class="opciones-coche">
+                            <div class="opciones-coche-texto">                                         
+                                <span style="font-weight: 500; color: #FFF;"">Volkswagen Caravelle</span> 
+                                <p class="texto-justificado">The Caravelle is equipped with advanced safety and technology features, such as driving assistants, infotainment systems and intuitive connectivity. With efficient performance and powerful engine options, the Volkswagen Caravelle offers a perfect balance between functionality and style, making it the ideal choice for both family trips and commercial use.</p>
+                                <div class="opciones-coche-iconos">
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/personas.webp">
+                                        <span>Persons:<br>Max. 7</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/maleta.webp">
+                                        <span>Suitcases:<br>Max. 7</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/valijas.webp">
+                                        <span>Luggage:<br>Max. 0</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/ninos.webp">
+                                        <span>Children:<br>2 - 5 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/bebe.webp">
+                                        <span>Baby chair:<br>0 - 2 years</span>
+                                    </div>
+                                    <div class="opciones-coche-iconbox">
+                                        <img class="opciones-coche-iconos-img" src="https://groupgolden.com/wp-content/uploads/2023/10/discapacidad.webp">
+                                        <span>Suitable for chairs:<br>No</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="opciones-coche-video">
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/859082670?muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" width="289" height="162" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Golden_Group_V.W_Caravelle" data-ready="true"></iframe>
+                                </div>                    
+                            </div>
+                        </div>            
+                    </div>  
+                    <div class="button-contanainer container">
+                        <div class="button-wrapper">
+                            <button onclick="changeStep('prev', 1)" type="button" class="button-previous">Previous</button>
+                        </div>
+                        <div class="button-wrapper">
+                            <button onclick="changeStep('next', 3)" type="button" class="button-next">Next</button>
+                        </div>
+                    </div><!-- buttons-->
+             </div><!-- Opciones tipo de autos-->            
+            <div class="step step_3">
+                <h2>Fill out the following information</h2>
+                <div class="form-group">
+                    <input class="input-fecha" type="text" placeholder="Pick up date" name="form_fields[field_927ad75]" id="form-field-field_927ad75" required="required" aria-required="true" onfocus="(this.type='date')" onchange="(this.type='text')">
+                </div>
+                <div class="form-group">
+                    <input class="input-hora" type="text" placeholder="Pick up time" onfocus="(this.type='time')" onchange="(this.type='text')" name="form_fields[field_eadf50c]" id="form-field-field_eadf50c" required="required" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <input size="1" type="text" name="form_fields[field_a864113]" id="form-field-field_a864113" placeholder="Pickup location" required="required" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <input size="1" type="text" name="form_fields[field_421fcaf]" id="form-field-field_421fcaf" placeholder="Destination place" required="required" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input size="1" type="tel" name="form_fields[field_3af8a0f]" id="form-field-field_3af8a0f" placeholder="Phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Solo se aceptan números y caracteres de teléfono (#,-,*,etc).">
+                </div>
+                <div class="button-contanainer container">
+                    <div class="button-wrapper">
+                        <button onclick="changeStep('prev', 2)" type="button" class="button-previous">Previous</button>
+                    </div>
+                    <div class="button-wrapper">
+                        <button onclick="changeStep('next', 4)" type="button" class="button-next">Submit</button>
+                    </div>
+                </div><!-- buttons-->
+            </div> <!-- Opciones de recogida-->                      
+        </form>
+    </div>  
+    <script src="app.js"></script>
+</body>
+</html>
