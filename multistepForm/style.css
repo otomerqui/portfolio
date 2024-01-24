@@ -178,7 +178,7 @@ label {
 .button-wrapper {
     padding-right: calc( 50px/2 );
     padding-left: calc( 50px/2 );
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 }
 
 button.button-previous, button.button-next, a.button-next {
@@ -187,10 +187,11 @@ button.button-previous, button.button-next, a.button-next {
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-radius: 0px 0px 0px 0px;
-    padding: 15px 55px 15px 55px;
+    padding: 15px 35px 15px 35px;
     background-color: #a99154;
     border-color: #a99154;
     cursor: pointer;
+    width: 100%;
 }
 
 button.button-previous:hover, button.button-next:hover {
@@ -201,7 +202,7 @@ button.button-previous:hover, button.button-next:hover {
     border-radius: 0px 0px 0px 0px;
     padding: 15px 55px 15px 55px;
     background-color: transparent;
-    border-color: #a99154;
+    border-color: #a99154;    
 }
 
 .golden-Wheels-options, .golden-toursim-options, .golden-health-options {
@@ -404,6 +405,14 @@ p.container_tk_text {
     .opciones-coche-iconbox {
         width: 100%;
         
+    }
+    .form-group {
+        width: 80%;
+        padding-left: 0;
+    }
+    .button-wrapper {
+        width: 50%;
+        text-align: center;
     }
 }
 
