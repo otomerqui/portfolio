@@ -16,7 +16,10 @@ console.log(proyectosContainer);
 
     const projectCardTitle = document.createElement('div');
     projectCardTitle.classList.add('project_card_title');
-    projectCardTitle.innerHTML = `<h3><a href="${proyecto.url}" target="_blank">${proyecto.titulo}<a/></h3><i class="fa-solid fa-arrow-up-right-from-square"></i>`;
+    projectCardTitle.innerHTML = `
+        <h3>
+            <a href="${proyecto.url}" target="_blank">${proyecto.titulo}<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </h3>`;
     projectCardContent.appendChild(projectCardTitle);
     
 

@@ -46,7 +46,7 @@ const proyectos = [
 		descripcion: 'WordPress Theme Website for local gyms with their post types to show the different classes and teachers of each one.',
 		technology: ['CSS', 'HTML', 'JS', 'PHP', 'WordPress'],
 		url: 'https://wp-theme.digilabonline.com/',		
-        imagen: './resources/img/susurros-del-paraiso.webp'
+        imagen: './resources/img/gym-website.webp'
 	},
 	{
 		titulo: 'Car Listing Website',
