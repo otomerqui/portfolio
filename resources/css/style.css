@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,700&display=swap');
+@import url('href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"');
+
+/* Fonts */
+:root {
+	
+	--font-body: 'Oswald', sans-serif;
+	--font-title: 'Titillium Web', sans-serif;
+  }
 
 * {
 	margin: 0;
@@ -11,8 +18,8 @@ html {
 }
 
 body {
-	background-color: #000;
-	font-family: 'Roboto', sans-serif;
+	background-color: #111111;
+	font-family: var(--font-body);
 	color: #fff;
 }
 
@@ -23,6 +30,7 @@ h1 {
 	font-size: 3rem;
 	text-align: center;
 	line-height: 1.5em;
+	font-family: var(--font-title);
 }
 
 h2 {
@@ -35,6 +43,7 @@ h2 {
 	letter-spacing: 1px;
 	margin-top: 15px;
 	margin-bottom: 25px;
+	font-family: var(--font-title);
 }
 
 h3 {
@@ -43,19 +52,50 @@ h3 {
 	margin: 1rem;	
 	font-size: 1.5rem;
 	text-align: center;
+	font-family: var(--font-title);
 }
 
 p {
 	color: #fff;
 	font-weight: 300;
 	margin: 0;	
-	font-size: 1rem;
+	font-size: 1.3rem;
 	text-align: center;
 	margin: 0.2em 0;
+
 }
 
 a {
 	text-decoration: none;
+}
+
+menu, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column-fixed {
+	width: 40%;
+	top: 100px;
+	position: sticky;
+	flex: 0 0 auto;
+	z-index: 1;
+	padding-right: 2rem;
+}
+
+.column {
+	width: 60%;
+	flex: 1;
+    overflow-y: auto;
 }
 
 .container {
@@ -142,7 +182,7 @@ main .about .photo {
 main .about .photo img {
 	vertical-align: top;
 	border-radius: 50%;
-	border: 6px solid rgba(0,0,0,0.8);
+	border: 6px solid #111111;
 }
 
 main .about .text_about {
@@ -220,6 +260,123 @@ button[role="tab"][aria-selected="true"] {
 	overflow: hidden;
 	margin-bottom: 1.5rem;	
 }
+
+.project_card {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+	width: 100%;
+	height: 220px;
+	max-width: 800px;
+	padding: 2rem;
+	transition: all 100ms ease-in;
+}
+
+.project_card:hover {
+	cursor: pointer;
+	background-color: #3894ea1f;	
+	border-radius: 8px;
+}
+
+.project_card:hover .project_card_title h3 {
+	color: #3895ea;	
+}
+
+.project_card:hover .project_card_title i.fa-solid.fa-arrow-up-right-from-square {
+	color: #3895ea;
+}
+
+.project_card_image {
+	width: 25%;
+	height: 100%;
+	overflow: hidden;	
+	display: inline-block;
+	border-radius: 8px;		
+}
+
+
+.project_card_image_bg {
+	width: 100%;	
+	height: 100%;	
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;		
+	border-radius: 8px;		
+	transition: transform 400ms ease-in-out;
+	transform: scale(1);
+	
+}
+
+.project_card:hover .project_card_image_bg {
+	transform: scale(1.1) translateZ(0);				
+}
+
+.project_card_content {
+	max-width: 75%;
+    padding-left: 1.2rem;
+    display: flex;    
+    flex-direction: column;
+    
+    gap: 6px;
+}
+
+.project_card_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.project_card_title h3 {
+	font-weight: 600;    
+	text-align: left;
+	margin: 0;
+}
+
+.column-fixed h3 {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 600; 
+	
+}
+
+.column-fixed p {
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1.5;
+	
+}
+
+.project_card_text p {
+    text-align: left;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+ul.project_card_tech_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: .5rem;
+}
+
+li.project_card_tech_item {
+    margin-top: .5rem;
+    background-color: #3895ea;
+    margin-right: .375rem;
+	padding: 0.25rem 0.75rem;
+	border-radius: 9999px;
+	font-size: 0.9rem;
+}
+
+
+
 
 
 
@@ -551,6 +708,17 @@ footer .contact .right .attribution a {
 
 /* ----- responsive styles -----*/
 
+@media only screen and (max-width: 1025px) {
+	.column-fixed {
+		width: 100%;
+		position: unset;		
+	}
+	.column {
+		width: 100%;
+		overflow-y: unset;		
+	}
+}
+
 @media only screen and (max-width: 768px) {
   header .menu {
     text-align: center;
@@ -576,6 +744,20 @@ footer .contact .right .attribution a {
 	}
 	.card {
 		width: 80%;
+	}
+	.project_card {
+		flex-wrap: wrap;
+		height: 550px;		
+	}
+	.project_card_image {
+		width: 100%;
+		margin-bottom: 1rem;
+		height: 50%;
+	}
+	.project_card_content {
+		    margin-bottom: 1rem;
+			max-width: 100%;
+			padding-left: 0;		
 	}
 
 }
