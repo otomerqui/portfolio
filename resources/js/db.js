@@ -78,14 +78,14 @@ const proyectos = [
 	},
 	{
 		titulo: 'Optin Page',
-		descripcion: 'Optin page to register for an online class to learn NLP.',
+		descripcion: 'Optin page to register for an online class to learn NLP made with HTML/CSS and some Javascript.',
 		technology: ['CSS', 'HTML', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/optinPage/index.html',		
         imagen: './resources/img/optin-page.webp'
 	},
 	{
 		titulo: 'Contact Validation Form',
-		descripcion: 'Small contact form with validations in all its input fields.',
+		descripcion: 'Small contact form with validations in all its input fields made with HTML/CSS and some Javascript.',
 		technology: ['CSS', 'HTML', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/contactFormValidation/form.html',		
         imagen: './resources/img/form validation.webp'

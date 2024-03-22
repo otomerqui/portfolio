@@ -1,6 +1,6 @@
-const proyectosContainer = document.querySelector('.column');
-console.log(proyectos);
-console.log(proyectosContainer);
+const proyectosContainer = document.querySelector('.projects-column');
+//console.log(proyectos);
+//console.log(proyectosContainer);
 
   proyectos.forEach(proyecto => {
     const projectCard = document.createElement('div');
@@ -8,7 +8,7 @@ console.log(proyectosContainer);
 
     const projectCardImage = document.createElement('div');
     projectCardImage.classList.add('project_card_image');
-    projectCardImage.innerHTML = `<div class="project_card_image_bg" style="background-image: url('${proyecto.imagen}');"></div>`;
+    projectCardImage.innerHTML = `<a href="${proyecto.url}" target="_blank"><div class="project_card_image_bg" style="background-image: url('${proyecto.imagen}');"></div></a>`;
     projectCard.appendChild(projectCardImage);
 
     const projectCardContent = document.createElement('div');
