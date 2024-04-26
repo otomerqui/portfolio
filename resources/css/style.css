@@ -55,7 +55,7 @@ h3 {
 	font-family: var(--font-title);
 }
 
-p {
+p, li {
 	color: #000;
 	font-weight: 300;
 	margin: 0;	
@@ -650,12 +650,14 @@ section#skills_menu {
 	width: 400px;
 	background-color: transparent;
 	background-color: #e7e5eb;
+	border-radius: 5px;
   }
   
   .myBar {
 	width: 1%;
 	height: 5px;
 	background: linear-gradient(90deg, #3895ea 0%, #244b84 100%);
+	border-radius: 5px;
   }
 
 
@@ -842,6 +844,75 @@ main .resume .container button:active {
     color: #1a2f51;
 }
 
+/* Experience styles */
+section#experience_menu {
+    margin: 8% 0 0;
+}
+
+.experience_card {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    max-width: 800px;
+    padding: 2rem;
+    transition: all 100ms ease-in;
+	background: #c3e3fa;
+	border-radius: 0.75rem;
+	border-left: 5px solid #3080e0;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.experience_card:hover {
+	cursor: pointer;
+	background-color: #3894ea1f;	
+	border-radius: 10px;
+}
+
+.experience_card_date {
+    width: 25%;
+    height: 100%;    
+}
+
+.experience_card_date p {
+    color: #244b84;   
+}
+
+.experience_card_content {
+    max-width: 75%;
+    padding-left: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.experience_card_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.experience_card_title h3 {
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+	color: #1a2f51;
+}
+
+.experience_card_intitution p {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+	margin-bottom: 10px;
+	color: #244b84;
+}
+
+.experience_card_description ul li {
+    color: #3895ea;
+	list-style: circle;
+}
 
 
 /* Footer styles*/
@@ -1003,7 +1074,17 @@ footer .contact .right .attribution a {
 	.project_card_image_bg {
 		border-radius: 0.75rem 0.75rem 0 0;
 	}
-
+	.experience_card {
+		flex-direction: column-reverse;		
+	}
+	.experience_card_content {
+		max-width: 100%;		
+	}
+	.experience_card_date {
+		width: 100%;		
+		padding-left: 1.7rem;
+		margin-top: 0.5rem;
+	}
 }
 
 @media only screen and (max-width: 468px) {
