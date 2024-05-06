@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'CRM with indexedDB',
+		descripcion: 'Small CRM where you can manage customer information (CRUD), you can create, read, update and delete customers.',
+		technology: ['CSS', 'HTML', 'JS', 'indexedDB'],
+		url: 'https://indexeddb-crm.netlify.app/',		
+        imagen: './resources/img/project-crm.webp'
+	},
+	{
 		titulo: 'Vet Patients Records',
 		descripcion: 'Application to keep track of patient admission to the veterinarian and the owners contact information.',
 		technology: ['CSS', 'HTML', 'JS', 'indexedDB'],
