@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'React E-commerce Cart',
+		descripcion: 'Ecommerce cart feature using react, you can add, view, update quantities and delete items from the cart.',
+		technology: ['react.js','CSS', 'HTML', 'JS', 'local storage'],
+		url: 'https://react-cart-ecommerce.netlify.app/',		
+        imagen: './resources/img/react-cart-ecommerce.webp'
+	},
+	{
 		titulo: 'CRM with indexedDB',
 		descripcion: 'Small CRM where you can manage customer information (CRUD), you can create, read, update and delete customers.',
 		technology: ['CSS', 'HTML', 'JS', 'indexedDB'],
