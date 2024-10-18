@@ -1,8 +1,22 @@
 const proyectos = [
 	{
+		titulo: 'React Car listing website',
+		descripcion: 'Listing website using react.js.',
+		technology: ['react.js','CSS', 'HTML', 'JS', 'Tailwind css'],
+		url: 'https://omreactcarlisting.netlify.app/',		
+        imagen: './resources/img/react-car-listing.webp'
+	},
+	{
+		titulo: 'React tasks app',
+		descripcion: 'Basic Task App using react.js.',
+		technology: ['react.js','CSS', 'HTML', 'JS', 'Tailwind css'],
+		url: 'https://om-react-tasks-app.netlify.app/',		
+        imagen: './resources/img/react-tasks-app.webp'
+	},
+	{
 		titulo: 'React E-commerce Cart',
-		descripcion: 'Ecommerce cart feature using react, you can add, view, update quantities and delete items from the cart.',
-		technology: ['react.js','CSS', 'HTML', 'JS', 'local storage'],
+		descripcion: 'Ecommerce cart feature using react.js, you can add, view, update quantities and delete items from the cart.',
+		technology: ['react.js','CSS', 'HTML', 'JS', 'Tailwind css', 'local storage'],
 		url: 'https://react-cart-ecommerce.netlify.app/',		
         imagen: './resources/img/react-cart-ecommerce.webp'
 	},
