@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Landing page finance course',
+		descripcion: 'Landing page for marketing',
+		technology: ['HTML', 'CSS', 'JS', 'Tailwind css'],
+		url: 'https://lp-finanzas.netlify.app/',		
+        imagen: './resources/img/lp-finanzas.webp'
+	},
+	{
 		titulo: 'React Car listing website',
 		descripcion: 'Listing website using react.js.',
 		technology: ['react.js','CSS', 'HTML', 'JS', 'Tailwind css'],
@@ -74,21 +81,21 @@ const proyectos = [
 		descripcion: 'WordPress Theme Website for local gyms with their post types to show the different classes and teachers of each one.',
 		technology: ['CSS', 'HTML', 'JS', 'PHP', 'WordPress'],
 		url: 'https://wp-theme.digilabonline.com/',		
-        imagen: './resources/img/gym-website.webp'
+        imagen: './resources/img/gym-web.webp'
 	},
 	{
 		titulo: 'Car Listing Website',
 		descripcion: 'Car sales website with filter to search by car brand, year, minimum price, maximum price, number of doors, transmission type and color.',
 		technology: ['CSS', 'HTML', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/carStoreListing/carListing.html',		
-        imagen: './resources/img/car-listing.webp'
+        imagen: './resources/img/car-listing-web.webp'
 	},
 	{
 		titulo: 'Ecommerce Website',
 		descripcion: 'Ecommerce website home page with shopping cart made with local storage.',
 		technology: ['CSS', 'HTML', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/ecommerceWebsite/ecommerceWebsite.html',		
-        imagen: './resources/img/ecommerce-website-home.webp'
+        imagen: './resources/img/ecom-web.webp'
 	},
 	{
 		titulo: 'Notes App',
@@ -109,7 +116,7 @@ const proyectos = [
 		descripcion: 'Optin page to register for an online class to learn NLP made with HTML/CSS and some Javascript.',
 		technology: ['CSS', 'HTML', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/optinPage/index.html',		
-        imagen: './resources/img/optin-page.webp'
+        imagen: './resources/img/optin-ahpnl.webp'
 	},
 	{
 		titulo: 'Contact Validation Form',
@@ -123,20 +130,20 @@ const proyectos = [
 		descripcion: 'Homepage of small corporate website with its service, contact, gallery, etc. sections.',
 		technology: ['CSS', 'HTML'],
 		url: 'https://otomerqui.github.io/portfolio/corporateWebsite/corporate.html',		
-        imagen: './resources/img/corporate-website.webp'
+        imagen: './resources/img/corpo-web.webp'
 	},
 	{
 		titulo: 'CoffeShop Website',
 		descripcion: 'Homepage of small CoffeShop website with its service, contact, gallery, etc. sections.',
 		technology: ['CSS', 'HTML'],
 		url: 'https://otomerqui.github.io/portfolio/coffeShopWebsite/coffeShop.html',		
-        imagen: './resources/img/coffeshop-website.webp'
+        imagen: './resources/img/coffe-web.webp'
 	},
 	{
 		titulo: 'Photo Camera',
 		descripcion: 'Homepage of small Photo camera website with its service, contact, gallery, etc. sections.',
 		technology: ['CSS', 'HTML'],
 		url: 'https://otomerqui.github.io/portfolio/photographyWebsite/photography.html',		
-        imagen: './resources/img/photography-website.webp'
+        imagen: './resources/img/photo-web.webp'
 	},
 ];
