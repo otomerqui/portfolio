@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Landing page course website',
+		descripcion: 'Landing page for academy',
+		technology: ['HTML', 'CSS', 'JS', 'Tailwind css'],
+		url: 'https://lp-richmind.netlify.app/',		
+        imagen: './resources/img/richmind.webp'
+	},
+	{
 		titulo: 'Landing page finance course',
 		descripcion: 'Landing page for marketing',
 		technology: ['HTML', 'CSS', 'JS', 'Tailwind css'],
