@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Fictional University/School',
+		descripcion: 'Custom WordPress theme for a University/School. Here we have relationships between professors, programs, campuses and more',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://fictional-university.digilabonline.com/',		
+        imagen: './resources/img/fictional-university.digilabonline.com_.webp'
+	},
+	{
 		titulo: 'Todos a Coleccionar',
 		descripcion: 'Custom WordPress theme for a blog dedicated to action figure collectors.',
 		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
