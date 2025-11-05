@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Real State Market Place',
+		descripcion: 'Custom WordPress theme for a real estate marketplace. The marketplace allows users to register as real estate sellers and publish, edit, and delete properties. It also features AJAX filters for searching properties and an AJAX real estate seller search function.',
+		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
+		url: 'https://realstate.enlawebpro.online/',		
+        imagen: './resources/img/realestate.webp'
+	},
+	{
 		titulo: 'Fictional University/School',
 		descripcion: 'Custom WordPress theme for a University/School. Here we have relationships between professors, programs, campuses and more',
 		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
