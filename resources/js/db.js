@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Aurum Care',
+		descripcion: 'Custom WordPress theme for a physiotherapy service. The website displays services, video testimonials from a custom post type, and an image-based testimonial gallery.',
+		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
+		url: 'https://www.aurumcared.com/',		
+        imagen: './resources/img/aurum-care.webp'
+	},
+	{
 		titulo: 'Real State Market Place',
 		descripcion: 'Custom WordPress theme for a real estate marketplace. The marketplace allows users to register as real estate sellers and publish, edit, and delete properties. It also features AJAX filters for searching properties and an AJAX real estate seller search function.',
 		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
