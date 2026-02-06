@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'En la Web Pro',
+		descripcion: 'Custom WordPress theme for a website development service. The website displays services, portfolio carousel from a custom post type using tailwindcss',
+		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
+		url: 'https://www.enlawebpro.online/',		
+        imagen: './resources/img/enlawebpro.webp'
+	},
+	{
 		titulo: 'Aurum Care',
 		descripcion: 'Custom WordPress theme for a physiotherapy service. The website displays services, video testimonials from a custom post type, and an image-based testimonial gallery.',
 		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
