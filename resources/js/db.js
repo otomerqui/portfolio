@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Ingresos adicionales',
+		descripcion: 'Custom WordPress theme for a blog type website. The website displays blogs, categories, it also has a filtering option',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://www.ingresosadicionales.club/',		
+        imagen: './resources/img/ingresos-adicionales.webp'
+	},
+	{
 		titulo: 'En la Web Pro',
 		descripcion: 'Custom WordPress theme for a website development service. The website displays services, portfolio carousel from a custom post type using tailwindcss',
 		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS', 'PHP', 'WordPress'],
