@@ -1,5 +1,19 @@
 const proyectos = [
 	{
+		titulo: 'Expensio App',
+		descripcion: 'Custom Expense Tracker WordPress App for tracking personal expenses. The app allows for adding, editing deleting expenses. Add categories, see real time data reports, etc.',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://dev.enlawebpro.online/',		
+        imagen: './resources/img/expensio-app.webp'
+	},
+	{
+		titulo: 'Estudio Rialto',
+		descripcion: 'Custom WordPress theme for architecture business. The website displays projects, services, it also has a filtering option for the projects based on project categories using AJAX',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://demo.enlawebpro.online/',		
+        imagen: './resources/img/estudiorialto.webp'
+	},
+	{
 		titulo: 'Ingresos adicionales',
 		descripcion: 'Custom WordPress theme for a blog type website. The website displays blogs, categories, it also has a filtering option',
 		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
@@ -42,6 +56,13 @@ const proyectos = [
         imagen: './resources/img/todosacoleccionar-img.webp'
 	},
 	{
+		titulo: 'Gym Business',
+		descripcion: 'Demo of a custom WordPress theme for local gyms, featuring custom post types to display each gym’s classes and instructors.',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://wp-theme.digilabonline.com/',		
+        imagen: './resources/img/gym-web.webp'
+	},
+	{
 		titulo: 'Landing page course website',
 		descripcion: 'Front-end demo of a landing page for an educational academy.',
 		technology: ['HTML', 'CSS', 'Tailwindcss', 'JS'],
@@ -54,7 +75,7 @@ const proyectos = [
 		technology: ['HTML', 'CSS', 'Tailwind css', 'JS'],
 		url: 'https://lp-finanzas.netlify.app/',		
         imagen: './resources/img/lp-finanzas.webp'
-	},
+	},/*
 	{
 		titulo: 'React Car listing website',
 		descripcion: 'Front-end demo of a listing website built with React.js.',
@@ -62,6 +83,7 @@ const proyectos = [
 		url: 'https://omreactcarlisting.netlify.app/',		
         imagen: './resources/img/react-car-listing.webp'
 	},
+	
 	{
 		titulo: 'React tasks app',
 		descripcion: 'Front-end demo of a basic task app built with React.js.',
@@ -75,7 +97,7 @@ const proyectos = [
 		technology: ['HTML', 'CSS', 'Tailwind css', 'JS', 'react.js', 'local storage'],
 		url: 'https://react-cart-ecommerce.netlify.app/',		
         imagen: './resources/img/react-cart-ecommerce.webp'
-	},
+	},*/
 	{
 		titulo: 'CRM with indexedDB',
 		descripcion: 'Basic demo of a small CRM where you can manage customer information (CRUD). You can create, read, update, and delete customers.',
@@ -96,7 +118,7 @@ const proyectos = [
 		technology: ['HTML', 'CSS', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/multistepForm/index.html',		
         imagen: './resources/img/multistep-form.webp'
-	},		
+	},	/*	
 	{
 		titulo: 'Weekly Expenses APP',
 		descripcion: 'Front-end demo of a small application to track weekly expenses and compare them with the budget.',
@@ -110,14 +132,8 @@ const proyectos = [
 		technology: ['HTML', 'CSS', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/cotizadorSeguros/cotizador.html',		
         imagen: './resources/img/car-insurance-calculator-img.webp'
-	},
-	{
-		titulo: 'Gym Business',
-		descripcion: 'Demo of a custom WordPress theme for local gyms, featuring custom post types to display each gym’s classes and instructors.',
-		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
-		url: 'https://wp-theme.digilabonline.com/',		
-        imagen: './resources/img/gym-web.webp'
-	},
+	},*/
+	/*
 	{
 		titulo: 'Car Listing Website',
 		descripcion: 'Front-end demo of a car sales website with filters to search by brand, year, price range, number of doors, transmission type, and color.',
@@ -159,6 +175,6 @@ const proyectos = [
 		technology: ['HTML', 'CSS', 'JS'],
 		url: 'https://otomerqui.github.io/portfolio/notesApp/index.html',		
         imagen: './resources/img/notes-app.webp'
-	},
+	},*/
 	
 ];
