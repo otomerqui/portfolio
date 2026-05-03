@@ -1,5 +1,12 @@
 const proyectos = [
 	{
+		titulo: 'Dedragones shop',
+		descripcion: 'Custom WordPress theme for blog affiliate website. The website displays blogs and categories. It also has an AJAX filtering option.',
+		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
+		url: 'https://www.dedragones.shop/',		
+        imagen: './resources/img/dedragones.webp'
+	},
+	{
 		titulo: 'Expensio App',
 		descripcion: 'Custom Expense Tracker WordPress App for tracking personal expenses. The app allows for adding, editing deleting expenses. Add categories, see real time data reports, etc.',
 		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
@@ -15,7 +22,7 @@ const proyectos = [
 	},
 	{
 		titulo: 'Ingresos adicionales',
-		descripcion: 'Custom WordPress theme for a blog type website. The website displays blogs, categories, it also has a filtering option',
+		descripcion: 'Custom WordPress theme for a blog type website. The website displays blogs and categories. It also has an AJAX filtering option',
 		technology: ['HTML', 'CSS', 'JS', 'PHP', 'WordPress'],
 		url: 'https://www.ingresosadicionales.club/',		
         imagen: './resources/img/ingresos-adicionales.webp'
