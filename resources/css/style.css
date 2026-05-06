@@ -209,6 +209,7 @@ main .about .photo {
     border-radius: 50%; /* Para hacer la imagen redonda */    
     margin-right: 20px; /* Espacio entre la imagen y el texto */
 	width: 30%;
+	aspect-ratio: 1;
 }
 
 main .about .photo img {
