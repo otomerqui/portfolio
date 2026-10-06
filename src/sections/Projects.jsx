@@ -4,6 +4,20 @@ import { useState } from "react";
 
 const projects = [
     {
+        title: "Evet Web App",
+        Description: "Full-Stack Web App for veterinaries to organize patients, consultations, and medical records in one place—without paperwork or spreadsheets.",
+        image: `${import.meta.env.BASE_URL}/projects/evet_app_.webp`,
+        tags: ["React", "Tailwindcss", "Node"],
+        link: "https://evet-lyart.vercel.app/",       
+    }, 
+    {
+        title: "React / WordPress headless website",
+        Description: "React with WordPress headless landing page.",
+        image: `${import.meta.env.BASE_URL}/projects/enlawebpro_frontend.webp`,
+        tags: ["React", "Tailwindcss", "WordPress"],
+        link: "https://enlawebpro-frontend.vercel.app/",       
+    },
+    {
         title: "Coach/Therapist WordPress Theme",
         Description: "Custom single-site WordPress theme for coaches, therapists, psychologists and counseling professionals. Built with classic template files, BEM CSS, vanilla JS, ACF, and a strong focus on performance and security.",
         image: `${import.meta.env.BASE_URL}/projects/terapeuta.enlawebpro.online_.webp`,
